@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151b26"/>
+      <stop offset="100%" stop-color="#07080c"/>
+    </linearGradient>
+
+    <!-- Border Accent Gradient -->
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3ee0b1"/>
+      <stop offset="50%" stop-color="#1fa37e"/>
+      <stop offset="100%" stop-color="#3ee0b1"/>
+    </linearGradient>
+
+    <!-- Ambient Glow -->
+    <radialGradient id="radialGlow" cx="20%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#3ee0b1" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#3ee0b1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Base Rounded Squircle -->
+  <rect x="20" y="20" width="472" height="472" rx="116" fill="url(#bgGradient)" stroke="url(#accentGlow)" stroke-width="16"/>
+
+  <!-- Ambient Light Reflection -->
+  <rect x="20" y="20" width="472" height="472" rx="116" fill="url(#radialGlow)"/>
+
+  <!-- Monogram KB. -->
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Outfit', 'Syne', sans-serif" font-weight="900" font-size="216" letter-spacing="-8">
+    <text x="82" y="328" fill="#f4f1ea">KB</text>
+  </g>
+
+  <!-- Accent Mint Dot -->
+  <circle cx="414" cy="310" r="25" fill="#3ee0b1"/>
+</svg>
