@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ Kanishk Bairagi — Engineering Portfolio & Systems Showcase
+# ⚡ Kanishk Bairagi Engineering Portfolio & Systems Showcase
 
 ### *High-Performance React 19 Architecture • Algorithmic Execution Engines • Production Case Studies*
 
