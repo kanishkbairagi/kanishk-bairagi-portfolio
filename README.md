@@ -26,7 +26,7 @@
 
 ## 📌 Overview
 
-This repository houses the source code for the personal engineering portfolio of **Kanishk Bairagi**, designed as a technical portfolio and architectural showcase for **US MS in Computer Science (Fall 2026/2027)** admissions committees and software engineering teams.
+This repository houses the source code for the personal engineering portfolio of **Kanishk Bairagi**, designed as a technical portfolio and architectural showcase for software engineering teams.
 
 Beyond conventional portfolio websites, this platform functions as an **interactive engineering dossier**. It pairs production web deployments with formal **Request for Comments (RFC) Technical Design Documents**, interactive algorithmic state engines, asymptotic complexity proofs, and verified telemetry from global student cohorts.
 
