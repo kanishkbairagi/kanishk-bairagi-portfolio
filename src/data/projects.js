@@ -115,12 +115,12 @@ export const projects = [
         demo: "https://data-structure-visualizerr.vercel.app",
         image: dataStructureImg,
         metaBadges: [
-            "110+ Verified Users (7 Countries)",
+            "130+ Verified Users (8 Countries)",
             "O(log N) AVL Guaranteed",
             "Vercel Telemetry"
         ],
         description: "Architected an interactive algorithmic execution engine visualizing amortized complexity, self-balancing tree rotations, and graph shortest path algorithms. Features state machines demonstrating contiguous memory reallocation, AVL tree invariants, and Dijkstra edge relaxations.",
-        overviewDescription: "Architected an interactive algorithmic execution engine visualizing amortized complexity, self-balancing tree rotations, and graph shortest path algorithms. Features state machines demonstrating contiguous memory reallocation, AVL tree invariants, and Dijkstra edge relaxations. Validated through production telemetry with 110+ international students testing runtime mechanics during algorithm coursework.",
+        overviewDescription: "Architected an interactive algorithmic execution engine visualizing amortized complexity, self-balancing tree rotations, and graph shortest path algorithms. Features state machines demonstrating contiguous memory reallocation, AVL tree invariants, and Dijkstra edge relaxations. Validated through production telemetry with 130+ international students testing runtime mechanics during algorithm coursework.",
         cardHighlights: [
             "Dynamic AVL Self-Balancing with 4 Rotation Archetypes (LL, RR, LR, RL) maintaining strict O(log N) search bounds.",
             "Dijkstra's Shortest Path Tree (SPT) with Real-Time Distance Vector Relaxation & Priority Queue simulation."
@@ -129,7 +129,7 @@ export const projects = [
             "Dynamic AVL Self-Balancing with 4 Rotation Archetypes (LL, RR, LR, RL) enforcing height bounds h < 1.44 log2(N+2).",
             "Dijkstra's Shortest Path Tree (SPT) with real-time distance-vector relaxation and Priority Queue extraction.",
             "Trie lexicographical traversal with sub-linear autocomplete prediction in O(L) time where L is word length.",
-            "Amortized analysis demonstrator with buffer doubling (C -> 2C); evaluated by 110+ international student users with 93% cross-platform mobile engagement."
+            "Amortized analysis demonstrator with buffer doubling (C -> 2C); evaluated by 130+ international student users across 8 countries."
         ],
         metrics: [
             { label: "Core ADTs", value: "7 Structures" },
@@ -149,25 +149,25 @@ export const projects = [
             title: "Production Telemetry & Real-World Adoption",
             description: "Empirical telemetry and interaction metrics collected from Vercel analytics demonstrating international student usage and cross-platform verification.",
             stats: [
-                { label: "Verified Users", value: "110+ Students", sub: "Peak Interaction" },
-                { label: "Interaction Sessions", value: "162 Page Views", sub: "Algorithmic Runs" },
-                { label: "Global Reach", value: "7 Countries", sub: "Multi-Region" },
+                { label: "Verified Users", value: "130+ Students", sub: "Peak Interaction" },
+                { label: "Interaction Sessions", value: "190+ Page Views", sub: "Algorithmic Runs" },
+                { label: "Global Reach", value: "8 Countries", sub: "Multi-Region" },
                 { label: "Mobile Responsiveness", value: "93% Mobile", sub: "Cross-Platform" }
             ],
             screenshots: [
                 {
                     id: 1,
                     title: "Live Traffic & Interaction Peak",
-                    metricBadge: "110+ Unique Visitors • 162 Page Views",
+                    metricBadge: "130+ Unique Visitors • 190+ Page Views",
                     image: data1Img,
-                    caption: "Live Traffic Telemetry: 110+ verified student users and 162 algorithmic interaction sessions."
+                    caption: "Live Traffic Telemetry: 130+ verified student users and 190+ algorithmic interaction sessions."
                 },
                 {
                     id: 2,
                     title: "Geographic Distribution & Device Breakdown",
-                    metricBadge: "7 Countries • 93% Mobile Responsiveness",
+                    metricBadge: "8 Countries • Multi-Region Demographics",
                     image: data2Img,
-                    caption: "Global Demographics: Multi-region adoption across 7 countries with 93% cross-platform mobile usage."
+                    caption: "Global Demographics: Multi-region adoption across 8 countries (India, USA, UK, Switzerland, France, Netherlands, Philippines, Poland)."
                 }
             ]
         },
@@ -223,7 +223,7 @@ export const projects = [
                 { metric: "TRIE LOOKUP TIME", value: "O(L)", benchmark: "Sub-linear Prefix Traversal", status: "Optimal" },
                 { metric: "ARRAY APPEND COST", value: "Amortized O(1)", benchmark: "Verified via Buffer Doubling", status: "Optimal" },
                 { metric: "RENDERING TARGET", value: "60 FPS", benchmark: "Throttled Async Frame Queue", status: "Optimal" },
-                { metric: "ACADEMIC ADOPTION", value: "110+ Verified Users", benchmark: "7 Countries • Vercel Telemetry", status: "Telemetry" }
+                { metric: "ACADEMIC ADOPTION", value: "130+ Verified Users", benchmark: "8 Countries • Vercel Telemetry", status: "Telemetry" }
             ]
         }
     },
