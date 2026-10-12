@@ -21,13 +21,13 @@ export const projects = [
         github: "https://github.com/kanishkbairagi/Jawam-project.git",
         demo: "https://jawaminfotech.com/",
         image: jawamImage,
-        description: "Architected and engineered the company's enterprise single-page application (SPA) across 46 production routes. Designed route-based dynamic code splitting (React.lazy / Suspense) and an asset transcoding pipeline reducing media payload by ~72% (Lighthouse 96+, FCP < 1.1s). Built an asynchronous AI chat support feature featuring streaming token parsing, token-bounded context management, client-side session caching, and strict XSS sanitization.",
+        description: "Engineered the primary company web application spanning 46 production routes. Implemented route-level code splitting to cut initial bundle size under 140KB, automated media compression to shrink assets from 45MB to 8.2MB, and built a streaming AI customer support assistant with client-side XSS sanitization.",
         highlights: [
-            "Architected 46-route React SPA with route-level code splitting (React.lazy / Suspense), minimizing initial bundle footprint to <140KB",
-            "Engineered asynchronous AI chat engine with streaming token rendering, client session management & fallback caching",
-            "Designed media transcoding & responsive delivery pipeline, reducing streaming assets from ~45MB to ~8.2MB (~72%+ reduction)",
+            "Engineered 46-route React SPA with route-level code splitting (React.lazy / Suspense), keeping initial bundle under 140KB",
+            "Built streaming AI chat widget with chunked token parsing, client-side session caching, and fallback states",
+            "Automated video and image transcoding to WebP/AVIF, reducing media payload from ~45MB to ~8.2MB (~72% reduction)",
             "Achieved 96+ Lighthouse score across Core Web Vitals (FCP: 1.05s, LCP: 1.78s, CLS: 0.00)",
-            "Hardened client input surfaces with client-side sanitization against XSS and isolated API credentials via edge proxying"
+            "Sanitized input surfaces against XSS and isolated third-party API credentials behind edge proxies"
         ],
         metrics: [
             { label: "Core Web Vitals", value: "96+ Score" },
@@ -46,16 +46,16 @@ export const projects = [
         extraSkillsCount: 4,
         caseStudy: {
             bannerTitle: "Technical Design Document (RFC) & Architecture Spec",
-            bannerDescription: "Production engineering specification detailing asynchronous distributed stream parsing, route-based bundle splitting across 46 pages, Core Web Vitals optimization, and client-side security mitigation.",
+            bannerDescription: "Technical design document detailing route-based dynamic imports across 46 pages, streaming AI response handling, automated asset compression, and client-side input sanitization.",
             architectureTitle: "System & Data Flow Architecture",
             architectureNodes: [
                 {
                     title: "Client Layer (SPA)",
-                    desc: "46-route React architecture with dynamic imports, lazy chunk loading, and decoupled state hooks."
+                    desc: "46-route React architecture with dynamic imports, lazy chunk loading, and custom state hooks."
                 },
                 {
                     title: "Streaming AI Engine",
-                    desc: "Asynchronous REST/SSE streaming interface parsing real-time tokens with client session caching."
+                    desc: "REST/SSE streaming interface parsing real-time tokens with client session caching."
                 },
                 {
                     title: "Asset & WebPerf Pipeline",
@@ -69,22 +69,22 @@ export const projects = [
             deepDives: [
                 {
                     title: "Component & State Architecture",
-                    problem: "Managing state, shared navigation contexts, and assets across 46 distinct enterprise pages without bloated initial bundle sizes or cascading re-renders.",
-                    solution: "Implemented route-based dynamic code splitting using React.lazy and Suspense boundaries. Engineered lightweight custom hooks for local UI state and isolated session caching, keeping the initial gzipped JavaScript bundle under 140KB."
+                    problem: "A 46-page enterprise SPA without code splitting would yield a multi-megabyte bundle, causing slow initial page loads and high bounce rates.",
+                    solution: "Used React.lazy and Suspense boundaries at the route level to split code into on-demand chunks. Kept shared navigation state in lightweight custom hooks, reducing the initial gzipped JavaScript bundle to under 140KB."
                 },
                 {
                     title: "Asynchronous AI Chat Streaming & Context Management",
-                    problem: "Delivering instantaneous responses to prospective enterprise clients without UI freezing or token exhaustion.",
-                    solution: "Integrated an asynchronous streaming interface that processes tokens as they arrive via chunked streams. Maintained conversation history within strict token bounds, accompanied by exponential backoff and optimistic client-side fallback caching."
+                    problem: "Waiting for complete LLM responses over standard REST requests caused long loading delays and poor user feedback.",
+                    solution: "Connected the chat widget to an asynchronous streaming endpoint that renders tokens chunk by chunk as they arrive. Implemented client-side session caching and bounded chat history to prevent memory leaks and token limit overruns."
                 },
                 {
                     title: "Network & Asset Optimization Pipeline",
-                    problem: "13 high-definition hero video assets and dozens of graphics severely degraded First Contentful Paint and mobile loading times (~45MB uncompressed media payload).",
+                    problem: "13 high-definition hero videos and uncompressed graphics totaled ~45MB, severely degrading First Contentful Paint on mobile networks.",
                     solution: "Engineered an automated asset transcoding workflow targeting modern WebP/AVIF formats with responsive srcset bindings. Introduced intersection-observer-based lazy loading, slashing streaming media footprint by ~72% to ~8.2MB while preserving an initial JS bundle under 140KB."
                 },
                 {
                     title: "Security, Sanitization & Standards",
-                    problem: "Unsanitized user inquiries or raw streaming Markdown from the AI model risked Cross-Site Scripting (XSS) and client-side vulnerabilities.",
+                    problem: "Unsanitized user inquiries or raw streaming Markdown from the AI model risked Cross-Site Scripting (XSS) and client-side DOM vulnerabilities.",
                     solution: "Implemented client-side sanitization on all input buffers and streamed AI Markdown prior to DOM insertion. Enforced semantic HTML5 landmarks and ARIA tags for WCAG 2.1 AA accessibility compliance."
                 }
             ],
@@ -103,7 +103,7 @@ export const projects = [
     {
         id: 2,
         title: "Algorithmic State Engine & Data Structure Visualizer",
-        subtitle: "Interactive Algorithmic Execution Platform & Pedagogical Complexity Visualizer",
+        subtitle: "Interactive Algorithmic State Engine & Invariant Visualizer",
         timeline: "2025",
         role: "Algorithm & Systems Engineering",
         association: "Associated with LNCT, Indore",
@@ -119,8 +119,8 @@ export const projects = [
             "O(log N) AVL Guaranteed",
             "Vercel Telemetry"
         ],
-        description: "Architected an interactive algorithmic execution engine visualizing amortized complexity, self-balancing tree rotations, and graph shortest path algorithms. Features state machines demonstrating contiguous memory reallocation, AVL tree invariants, and Dijkstra edge relaxations.",
-        overviewDescription: "Architected an interactive algorithmic execution engine visualizing amortized complexity, self-balancing tree rotations, and graph shortest path algorithms. Features state machines demonstrating contiguous memory reallocation, AVL tree invariants, and Dijkstra edge relaxations. Validated through production telemetry with 135+ international students testing runtime mechanics during algorithm coursework.",
+        description: "Built an interactive execution engine to help students visualize abstract data structures and runtime invariants in real time. Features animated AVL tree self-balancing across all 4 rotation archetypes, Dijkstra's shortest path relaxation, and contiguous dynamic array buffer doubling (C -> 2C). Validated by 135+ international students across 8 countries.",
+        overviewDescription: "Built an interactive execution engine to help students visualize abstract data structures and runtime invariants in real time. Features animated AVL tree self-balancing across all 4 rotation archetypes, Dijkstra's shortest path relaxation, and contiguous dynamic array buffer doubling (C -> 2C). Validated by 135+ international students across 8 countries during computer science coursework.",
         cardHighlights: [
             "Dynamic AVL Self-Balancing with 4 Rotation Archetypes (LL, RR, LR, RL) maintaining strict O(log N) search bounds.",
             "Dijkstra's Shortest Path Tree (SPT) with Real-Time Distance Vector Relaxation & Priority Queue simulation."
@@ -128,7 +128,7 @@ export const projects = [
         highlights: [
             "Dynamic AVL Self-Balancing with 4 Rotation Archetypes (LL, RR, LR, RL) enforcing height bounds h < 1.44 log2(N+2).",
             "Dijkstra's Shortest Path Tree (SPT) with real-time distance-vector relaxation and Priority Queue extraction.",
-            "Trie lexicographical traversal with sub-linear autocomplete prediction in O(L) time where L is word length.",
+            "Trie lexicographical traversal with prefix search in O(L) time where L is word length.",
             "Amortized analysis demonstrator with buffer doubling (C -> 2C); evaluated by 135+ international student users across 8 countries with 82% mobile engagement."
         ],
         metrics: [
@@ -173,12 +173,12 @@ export const projects = [
         },
         caseStudy: {
             bannerTitle: "Technical Design Document (RFC) & Architecture Spec",
-            bannerDescription: "Technical specification detailing the decoupled state execution engine, invariant-preserving tree-rotation math, priority queue-edge relaxations, and pedagogical amortized memory profiling.",
+            bannerDescription: "Technical design document detailing the asynchronous animation queue, AVL self-balancing rotations, Dijkstra shortest-path relaxations, and dynamic array buffer doubling.",
             architectureTitle: "Algorithmic Execution & State Machine Architecture",
             architectureNodes: [
                 {
                     title: "Decoupled Execution Engine",
-                    desc: "Asynchronous step scheduler separating computational invariant updates from DOM/SVG coordinate rendering."
+                    desc: "Asynchronous step queue separating computational invariant updates from DOM/SVG coordinate rendering."
                 },
                 {
                     title: "Self-Balancing AVL Engine",
@@ -190,28 +190,28 @@ export const projects = [
                 },
                 {
                     title: "Amortized Buffer Instrumentation",
-                    desc: "Physical contiguous memory allocation demonstrator tracking array buffer doubling (C → 2C) and memory writes."
+                    desc: "Contiguous memory allocation demonstrator tracking array buffer doubling (C → 2C) and memory writes."
                 }
             ],
             deepDives: [
                 {
                     title: "Tree Balancing Mechanics & Worst-Case Bounds",
-                    problem: "Unbalanced BST insertions degrade search complexity to O(N), breaking predictable lookup guarantees for dynamic datasets.",
-                    solution: "Engineered an AVL engine dynamically tracking Balance Factors (BF = h_L - h_R). Triggered 4 rotation archetypes (LL, RR, LR, RL) to enforce height bounds h ≤ 1.44 log2(N + 2), guaranteeing strict O(log N) search."
+                    problem: "In an unbalanced BST, sequential insertions degrade search complexity to O(N), breaking predictable lookup guarantees for dynamic datasets.",
+                    solution: "Implemented an AVL tree that tracks the balance factor BF = h_L - h_R after every insertion. When |BF| > 1, the engine applies one of 4 rotation cases (LL, RR, LR, RL) to enforce height bounds h ≤ 1.44 log2(N + 2), guaranteeing strict O(log N) search."
                 },
                 {
                     title: "Shortest Path & Distance Vector Relaxation",
-                    problem: "Undergraduate students struggle to visualize concurrent Priority Queue state transitions and distance vector relaxations during graph traversal.",
+                    problem: "Understanding how Dijkstra's algorithm uses a priority queue to iteratively relax edges and maintain distance vectors is difficult without step-by-step visual feedback.",
                     solution: "Simulated Dijkstra's algorithm on weighted digraphs, visualizing greedy edge relaxations d[v] = min(d[v], d[u] + w(u,v)) alongside real-time distance vector tables and optimal Shortest Path Tree (SPT) reconstruction."
                 },
                 {
                     title: "Amortized Complexity via Memory Buffer Doubling",
-                    problem: "Abstract mathematical aggregate analysis of amortized O(1) append costs is difficult to conceptualize without physical memory representation.",
+                    problem: "Proving why dynamic array appending is amortized O(1) despite occasional expensive memory reallocations is unintuitive for students.",
                     solution: "Constructed an animated contiguous memory buffer visualizing size vs. capacity. Illustrated buffer overflow reallocations (C → 2C) and element copy costs, empirically validating amortized O(1) bounds."
                 },
                 {
                     title: "Trie Lexicographical Traversal & Prefix Search",
-                    problem: "Sub-linear string lookups and dynamic autocomplete require multi-branch tree traversing with termination validation.",
+                    problem: "Prefix queries and dynamic autocomplete require multi-branch tree traversing with termination validation.",
                     solution: "Built a prefix tree (Trie) visualizer with isEndOfWord termination markers, prefix traversal path tracking, and live autocomplete prediction in O(L) time where L is word length."
                 }
             ],
@@ -241,12 +241,12 @@ export const projects = [
         github: "https://github.com/kanishkbairagi/emoji-based-mood-diary-with-color-adaptive-themes.git",
         demo: "https://emoji-based-mood-diary-with-color-a.vercel.app/",
         image: project3,
-        description: "Built an interactive mood tracking web application that allows users to select and record their emotions through an intuitive emoji based interface. Designed a colorful, responsive UI with emotion categories, themed components, and an engaging user experience. Deployed the application on Vercel for live access.",
+        description: "A responsive mood journal featuring color-adaptive theme switching based on logged emotional states. Built with React and local storage for client-side persistence and animated state transitions.",
         highlights: [
-            "Intuitive emoji based interface to select, capture, and reflect on daily emotions",
-            "Emotion categories with color adaptive themed components and vivid UI states",
-            "Engaging user experience with animated micro transitions and journal history",
-            "Deployed on Vercel with responsive mobile and desktop support"
+            "Emoji-driven emotional logging with localized state persistence",
+            "Dynamic color-adaptive themes mapping emotion vectors to UI palette transitions",
+            "Animated transitions with Framer Motion and persistent journal history",
+            "Fully responsive layout deployed on Vercel"
         ],
         metrics: [
             { label: "Theme Engine", value: "Color-Adaptive" },
@@ -277,13 +277,13 @@ export const projects = [
         github: "https://github.com/kanishkbairagi/notation-app.git",
         demo: "https://notation-app-six.vercel.app/",
         image: notationsImg,
-        description: "Architected an algorithmic knowledge workspace integrating an HTML5 Canvas n-body Force-Directed Knowledge Graph Visualizer and an Okapi BM25 Information Retrieval (IR) engine. Features Coulomb repulsion and Hooke spring physics simulations, Degree Centrality scoring, Breadth-First Search (BFS) shortest-path pathfinding, an inverted index with a prefix Trie, and AST-based bidirectional [[WikiLink]] backlink resolution.",
+        description: "A graph-based knowledge base that combines an interactive force-directed graph with an Okapi BM25 search engine. Simulates graph layout using Coulomb repulsion and Hooke spring physics on HTML5 Canvas at 60 FPS. Features sub-2ms search queries powered by an inverted index and prefix Trie, along with BFS shortest-path traversal between connected notes.",
         highlights: [
-            "Force-Directed Physics on HTML5 Canvas: Coulomb repulsion, Hooke spring attraction & damping velocity relaxation",
-            "Okapi BM25 Probabilistic Ranking: Non-linear term saturation (k1=1.2) & document length normalization (b=0.75)",
-            "Inverted Index & Prefix Trie: Postings list mapping Map<Term, PostingsList> & O(L) prefix autocomplete suggestions",
+            "Force-Directed Physics on HTML5 Canvas: Coulomb repulsion, Hooke spring attraction & damping velocity relaxation at 60 FPS",
+            "Okapi BM25 Probabilistic Ranking: Calibrated term saturation (k1=1.2) and document length normalization (b=0.75)",
+            "Inverted Index & Prefix Trie: In-memory postings list Map<Term, PostingsList> with sub-2ms O(L) prefix autocomplete",
             "Graph Theory Analytics: Degree Centrality CD(v) = deg(v)/(|V|-1) and BFS Shortest Path traversal in O(|V| + |E|)",
-            "AST-Driven Knowledge Graph: Bidirectional [[WikiLink]] resolution with an inbound backlinks drawer and query diagnostics HUD"
+            "AST-Driven Knowledge Graph: Bidirectional [[WikiLink]] parsing into an adjacency list with backlinks drawer"
         ],
         metrics: [
             { label: "Graph Engine", value: "Force-Directed G=(V,E)" },
@@ -303,7 +303,7 @@ export const projects = [
         extraSkillsCount: 3,
         caseStudy: {
             bannerTitle: "Technical Design Document (RFC) & Information Retrieval Architecture Spec",
-            bannerDescription: "Technical specification detailing the n-body force-directed physics simulation, probabilistic Okapi BM25 scoring function, prefix Trie postings index, and AST graph linking mechanisms.",
+            bannerDescription: "Technical design document detailing the HTML5 Canvas physics solver, Okapi BM25 search engine, prefix Trie autocomplete, and bidirectional graph backlinks.",
             architectureTitle: "Knowledge Graph & Information Retrieval Pipeline",
             architectureNodes: [
                 {
@@ -326,22 +326,22 @@ export const projects = [
             deepDives: [
                 {
                     title: "Force-Directed Physics & Canvas Relaxation Engine",
-                    problem: "Real-time layout of interconnected document graphs without edge tangling, overlap, or jitter required a stable numerical integration model running at 60 FPS.",
-                    solution: "Engineered an n-body relaxation solver simulating Coulomb repulsive forces between all node pairs and Hooke spring tension along active edges. Applied velocity damping (μ = 0.85) and kinetic energy cutoffs to bring the topological graph into aesthetic equilibrium."
+                    problem: "Laying out interconnected note graphs automatically without overlapping nodes or erratic visual jitter required an efficient numerical simulation running at 60 FPS.",
+                    solution: "Implemented an n-body force-directed solver using Coulomb repulsion between all nodes and Hooke spring attraction along edges. Applied velocity damping (μ = 0.85) and a kinetic energy cutoff to stabilize the graph into equilibrium."
                 },
                 {
                     title: "Okapi BM25 Probabilistic Ranking vs. Naive Substrings",
-                    problem: "Standard naive regex or includes() matching fails to account for term importance, query frequency saturation, and document length bias.",
+                    problem: "Basic substring search (includes()) ranks matches arbitrarily, ignoring term rarity, repetition saturation, and document length bias.",
                     solution: "Constructed an Inverted Index and implemented the Okapi BM25 statistical scoring model (k1 = 1.2, b = 0.75). Implemented Query Diagnostics Inspector modal to profile Term Frequency (TF), Inverse Document Frequency (IDF), and per-token score contributions in real time."
                 },
                 {
                     title: "Prefix Trie Autocomplete & Inverted Postings Lists",
-                    problem: "Searching across multi-thousand token knowledge bases on every keystroke incurs O(N × M) scan latency, causing input frame drops.",
+                    problem: "Scanning across multi-thousand-token documents on every keystroke causes search input lag and frame drops.",
                     solution: "Decoupled search into a Prefix Trie for O(L) query completion and an Inverted Postings list mapping token hashes to document pointers. Reduced average search query latency to sub-2ms."
                 },
                 {
                     title: "Degree Centrality Analysis & BFS Shortest Path Traversal",
-                    problem: "Users exploring sprawling research notes struggle to navigate semantic distances or identify pivotal high-importance hub topics.",
+                    problem: "Navigating large graph clusters makes it difficult to assess note importance or find the shortest connection between two related concepts.",
                     solution: "Implemented Degree Centrality analysis CD(v) = deg(v) / (|V| - 1) to dynamically size node radii, and integrated a Breadth-First Search (BFS) pathfinder computing the shortest semantic hop sequence in O(|V| + |E|) time."
                 }
             ],
@@ -375,12 +375,12 @@ export const projects = [
             "MERN Architecture",
             "O(|V| + |E|) Invariant Verified"
         ],
-        description: "A Directed Acyclic Graph (DAG) behavioral optimization engine modeling habit prerequisites. Implements real-time O(|V| + |E|) cycle prevention, Kahn’s topological sort, and Critical Path Method (CPM) bottleneck analysis over a MERN stack.",
+        description: "Full-stack routine planner that models daily habit dependencies as a Directed Acyclic Graph (DAG). Enforces cycle prevention using a 3-Color DFS algorithm in O(|V| + |E|) time, computes linear unlock queues with Kahn's topological sort, and identifies routine bottlenecks using the Critical Path Method (CPM).",
         highlights: [
-            "Formal DAG Invariants: Engineered an O(|V| + |E|) 3-Color DFS cycle detection engine to prevent circular deadlocks.",
-            "Topological Stratification: Implemented Kahn's algorithm to resolve linear milestone execution and unlock queues.",
-            "Critical Path Method (CPM) Bottleneck Detection: Formulated daily routine optimization using forward and backward dynamic programming passes over the DAG, identifying zero-slack critical paths and cumulative bottleneck durations.",
-            "Decoupled Full-Stack Architecture with Time-Series Persistence: Built a decoupled Node.js/Express REST API backed by MongoDB schemas for graph topologies and UTC-normalized habit completion logs, maintaining streak idempotency."
+            "DAG Invariant Enforcement: 3-Color DFS cycle detection rejecting circular dependencies in O(|V| + |E|) time",
+            "Topological Stratification: Kahn's in-degree queue calculating execution unlock tiers across prerequisite habits",
+            "Critical Path Method (CPM): Dynamic programming forward/backward passes identifying zero-slack routine bottlenecks",
+            "Full-Stack MERN Architecture: Decoupled Express REST API, MongoDB time-series persistence, and interactive D3.js canvas"
         ],
         metrics: [
             { label: "Graph Model", value: "Directed Acyclic Graph (DAG)" },
@@ -401,46 +401,46 @@ export const projects = [
         extraSkillsCount: 3,
         caseStudy: {
             bannerTitle: "Technical Design Document (RFC) & Graph Optimization Spec",
-            bannerDescription: "Production architectural design modeling routine dependencies as Directed Acyclic Graphs (DAGs), enforcing 3-color DFS cycle invariants, Kahn's topological stratification, and Critical Path Method (CPM) dynamic programming.",
+            bannerDescription: "Technical design document detailing routine dependency modeling using Directed Acyclic Graphs (DAGs), 3-color DFS cycle detection, Kahn's algorithm, and Critical Path Method (CPM) dynamic programming.",
             architectureTitle: "Full-Stack DAG & Behavioral Optimization Pipeline",
             architectureNodes: [
                 {
                     title: "Client & D3.js Canvas",
-                    desc: "React 18 frontend with interactive D3.js SVG canvas rendering DAG node topologies, topological strata, and golden critical paths."
+                    desc: "React frontend with interactive D3.js SVG canvas rendering DAG node topologies and the critical path."
                 },
                 {
                     title: "REST API & Ingestion",
-                    desc: "Node.js / Express API controller handling payload sanitization, idempotency keys, and UTC-normalized timestamp serialization."
+                    desc: "Node.js / Express API controller handling payload validation, idempotency keys, and UTC timestamp serialization."
                 },
                 {
                     title: "Graph Algorithmic Engine",
-                    desc: "Core algorithmic service executing 3-Color DFS cycle rejection, Kahn's in-degree zero queue, and CPM forward/backward passes in O(|V| + |E|)."
+                    desc: "Core algorithmic service executing 3-Color DFS cycle rejection, Kahn's in-degree queue, and CPM passes in O(|V| + |E|)."
                 },
                 {
                     title: "Persistence Layer",
-                    desc: "MongoDB collections storing HabitGraph (adjacency list, durations, weights) and HabitLog (time-series completion records)."
+                    desc: "MongoDB collections storing HabitGraph (adjacency list, durations, weights) and HabitLog (completion records)."
                 }
             ],
             deepDives: [
                 {
                     title: "Preventing Dependency Deadlocks (3-Color DFS)",
-                    problem: "In a dynamic graph where users define arbitrary dependencies, users might introduce circular dependencies (e.g., A → B → C → A), creating an unresolvable deadlock where no habit can ever be unlocked.",
-                    solution: "Implemented a 3-Color Depth-First Search cycle detection engine: Vertices are categorized into WHITE (unvisited), GRAY (in current recursion stack), and BLACK (fully explored). If a directed traversal encounters a GRAY vertex, a back-edge is proven to exist. The server aborts invalid edge mutations with HTTP status 400 Bad Request and returns the reconstructed cycle path sequence in O(|V| + |E|) time."
+                    problem: "In a dynamic graph where users define arbitrary dependencies, circular dependencies (e.g., A → B → C → A) create deadlocks where prerequisite requirements can never be satisfied.",
+                    solution: "Enforced DAG invariants using 3-Color Depth-First Search. Nodes are classified into WHITE (unvisited), GRAY (currently in recursion stack), and BLACK (fully explored). If traversal reaches a GRAY node, a cycle back-edge is detected. The server rejects the mutation with HTTP 400 in O(|V| + |E|) time and returns the offending cycle path."
                 },
                 {
                     title: "Determining Execution Strata (Kahn’s Algorithm)",
-                    problem: "The system must compute which habits are ready to execute immediately and linearize unlock tiers without evaluating every node on every click.",
-                    solution: "Implemented Kahn’s Algorithm using an in-degree zero queue: Evaluates indegree counts and assigns discrete topological strata: Level(v) = max(Level(u)) + 1 for all (u,v) ∈ E. Guarantees that any habit only unlocks once all parent nodes in the adjacency list are satisfied in O(|V| + |E|) time."
+                    problem: "Calculating which habits are unlocked and ready for execution requires an efficient topological ordering that updates without re-evaluating the entire graph on every action.",
+                    solution: "Implemented Kahn's Algorithm using an in-degree queue. Computes prerequisite tiers in O(|V| + |E|) time, ensuring a habit only unlocks once all incoming parent dependencies in the adjacency list are satisfied."
                 },
                 {
                     title: "Finding Bottlenecks via Critical Path Method (CPM)",
-                    problem: "Users need to know which prerequisite habit chain represents the primary bottleneck constraining total daily routine completion ('Which habits are holding back my entire day the most?').",
-                    solution: "Formulated a two-pass Dynamic Programming scheduler over the DAG: Forward Pass calculates Earliest Start (ES) and Earliest Finish (EF). Backward Pass calculates Latest Finish (LF) and Latest Start (LS). Slack is calculated as Slack(v) = LF(v) - EF(v). Any habit or edge where Slack = 0 is classified as belonging to the Critical Path and rendered with a highlighted golden visual flow."
+                    problem: "Users need to identify the exact sequence of prerequisite habits that constrains total daily routine completion.",
+                    solution: "Formulated a two-pass dynamic programming algorithm over the DAG: a Forward Pass to compute Earliest Start/Finish (ES, EF) and a Backward Pass for Latest Start/Finish (LS, LF). Nodes with zero slack (Slack = LF - EF = 0) form the Critical Path and are highlighted on the canvas as primary routine bottlenecks."
                 },
                 {
                     title: "Keystone Habit Centrality (Transitive Reachability)",
-                    problem: "Quantifying high-leverage foundational habits that unlock the widest downstream sequence of productive behaviors.",
-                    solution: "Using Breadth-First Search (BFS) over the directed adjacency list, the engine calculates the transitive closure size for every vertex in O(|V| · (|V| + |E|)). The habit with the highest transitive reach is designated the Keystone Habit, indicating the routine with the highest leverage on downstream success."
+                    problem: "Identifying high-leverage foundational habits that unlock the widest downstream sequence of productive behaviors.",
+                    solution: "Using Breadth-First Search (BFS) over the directed adjacency list, the engine calculates the transitive closure size for every vertex in O(|V| · (|V| + |E|)). The habit with the highest transitive reach is designated the Keystone Habit."
                 }
             ],
             benchmarksTitle: "Algorithmic Complexity Matrix & Systems Benchmarks",

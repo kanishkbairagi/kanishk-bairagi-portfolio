@@ -57,7 +57,7 @@ export default function Skills() {
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-zinc-500">
-            Focused on core modern frontend, robust backend services, scalable databases, and essential deployment tools.
+            Technologies and frameworks I use to build full-stack systems, optimize web performance, and implement algorithmic models.
           </p>
         </div>
 

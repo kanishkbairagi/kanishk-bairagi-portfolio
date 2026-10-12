@@ -9,7 +9,7 @@ const experiences = [
         period: 'Sep 2026 — Present · Full-time',
         location: 'Indore, MP · On-site',
         description:
-            'Promoted to full time Frontend Developer. Building high performance, production web applications, architecting responsive layouts, and developing polished user experiences with modern animations and reusable components.',
+            'Promoted from intern to full-time. Lead frontend development for client web apps, focusing on component modularity, fluid Framer Motion animations, and Lighthouse performance optimization.',
         focusAreas: ['Tailwind CSS', 'JavaScript', 'React.js', 'Framer Motion', 'Product UX'],
     },
     {
@@ -19,7 +19,7 @@ const experiences = [
         period: 'Jun 2026 — Sep 2026 · 4 mos',
         location: 'Indore, MP · On-site',
         description:
-            'Architected and delivered the enterprise 46-route React SPA with modular component hierarchy and route-level code splitting (React.lazy / Suspense, <140KB initial bundle). Engineered an asynchronous AI chat support interface with streaming response parsing, client-side session context caching, and rate limiting. Built a media transcoding pipeline achieving ~72% asset payload reduction and 96+ Core Web Vitals score across production routes.',
+            'Engineered the company\'s 46-route React SPA, reducing the initial JavaScript bundle to <140KB using route-based dynamic imports. Built an asynchronous streaming AI chat widget with client-side session caching and token sanitization. Transcoded video and image assets to modern WebP/AVIF formats, reducing total media payload by ~72% and scoring 96+ across Core Web Vitals.',
         focusAreas: ['React.js Architecture', 'Asynchronous AI Streaming', 'Route Code Splitting', 'Core Web Vitals (96+)', 'Session State Management', 'XSS Sanitization', 'Tailwind CSS', 'REST APIs'],
     },
     {
@@ -29,7 +29,7 @@ const experiences = [
         period: 'Dec 2025 — Mar 2026 · 4 mos',
         location: 'Indore, MP · Remote · Internship',
         description:
-            'Completed 3 months of frontend development training, gaining hands on experience with HTML, CSS, JavaScript, React.js, Tailwind CSS, responsive design, Git, and API integration.',
+            'Built responsive UI components and single-page apps using React, Tailwind CSS, and REST APIs while learning Git version control and modern frontend fundamentals.',
         focusAreas: ['HTML & CSS', 'JavaScript', 'React.js', 'Tailwind CSS', 'Git & APIs'],
     },
 ];
