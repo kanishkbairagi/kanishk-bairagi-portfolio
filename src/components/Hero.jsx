@@ -87,7 +87,7 @@ const Hero = () => {
                         transition={{ delay: 0.3 }}
                         className="mt-5 max-w-xl text-base leading-relaxed text-zinc-400 sm:text-lg"
                     >
-                        I can engineer, deploy, secure and improve a complete software system and integrate AI when it provides real value.
+                        I can build, deploy, secure and improve a complete software system and integrate AI when it provides real value.
                     </motion.p>
 
                     <motion.div
