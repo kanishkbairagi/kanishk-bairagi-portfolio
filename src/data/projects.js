@@ -281,18 +281,18 @@ export const projects = [
         demo: "https://notation-app-six.vercel.app/",
         image: notationsImg,
         metaBadges: [
-            "52+ Verified Users (7 Countries)",
+            "60+ Verified Users (7 Countries)",
             "BM25 Sub-2ms Queries",
             "Vercel Telemetry"
         ],
-        description: "A graph-based knowledge base that combines an interactive force-directed graph with an Okapi BM25 search engine. Simulates graph layout using Coulomb repulsion and Hooke spring physics on HTML5 Canvas at 60 FPS. Features sub-2ms search queries powered by an inverted index and prefix Trie, along with BFS shortest-path traversal between connected notes. Evaluated by 52+ users across 7 countries.",
-        overviewDescription: "A graph-based knowledge base combining an interactive force-directed graph with an Okapi BM25 search engine. Simulates graph layout using Coulomb repulsion and Hooke spring physics on HTML5 Canvas at 60 FPS with sub-2ms queries. Validated by 52+ global users across 7 countries.",
+        description: "A graph-based knowledge base that combines an interactive force-directed graph with an Okapi BM25 search engine. Simulates graph layout using Coulomb repulsion and Hooke spring physics on HTML5 Canvas at 60 FPS. Features sub-2ms search queries powered by an inverted index and prefix Trie, along with BFS shortest-path traversal between connected notes. Evaluated by 60+ users across 7 countries.",
+        overviewDescription: "A graph-based knowledge base combining an interactive force-directed graph with an Okapi BM25 search engine. Simulates graph layout using Coulomb repulsion and Hooke spring physics on HTML5 Canvas at 60 FPS with sub-2ms queries. Validated by 60+ global users across 7 countries.",
         highlights: [
             "Force-Directed Physics on HTML5 Canvas: Coulomb repulsion, Hooke spring attraction & damping velocity relaxation at 60 FPS",
             "Okapi BM25 Probabilistic Ranking: Calibrated term saturation (k1=1.2) and document length normalization (b=0.75)",
             "Inverted Index & Prefix Trie: In-memory postings list Map<Term, PostingsList> with sub-2ms O(L) prefix autocomplete",
             "Graph Theory Analytics: Degree Centrality CD(v) = deg(v)/(|V|-1) and BFS Shortest Path traversal in O(|V| + |E|)",
-            "AST-Driven Knowledge Graph: Bidirectional [[WikiLink]] parsing into an adjacency list with backlinks drawer; verified by 52+ visitors across 7 countries with 75% mobile usage."
+            "AST-Driven Knowledge Graph: Bidirectional [[WikiLink]] parsing into an adjacency list with backlinks drawer; verified by 60+ visitors across 7 countries with 75% mobile usage."
         ],
         metrics: [
             { label: "Graph Engine", value: "Force-Directed G=(V,E)" },
@@ -312,11 +312,11 @@ export const projects = [
         extraSkillsCount: 3,
         telemetry: {
             title: "Production Telemetry & Real-World Adoption",
-            badgeText: "52+ Users Across 7 Countries",
+            badgeText: "60+ Users Across 7 Countries",
             description: "Empirical telemetry and interaction metrics collected from Vercel analytics demonstrating multi-region usage and cross-device interaction.",
             stats: [
-                { label: "Verified Users", value: "52+ Visitors", sub: "Production Users" },
-                { label: "Interaction Sessions", value: "80+ Page Views", sub: "Graph Explorations" },
+                { label: "Verified Users", value: "60+ Visitors", sub: "Production Users" },
+                { label: "Interaction Sessions", value: "92+ Page Views", sub: "Graph Explorations" },
                 { label: "Global Reach", value: "7 Countries", sub: "India, US, EU, BR" },
                 { label: "Mobile Responsiveness", value: "75% Mobile", sub: "Cross-Platform" }
             ],
@@ -324,9 +324,9 @@ export const projects = [
                 {
                     id: 1,
                     title: "Live Traffic & Query Engagement",
-                    metricBadge: "52+ Unique Visitors • 80+ Page Views",
+                    metricBadge: "60+ Unique Visitors • 92+ Page Views",
                     image: note1Img,
-                    caption: "Live Traffic Telemetry: 52+ verified unique visitors and 80+ knowledge graph interaction sessions."
+                    caption: "Live Traffic Telemetry: 60+ verified unique visitors and 92+ knowledge graph interaction sessions."
                 },
                 {
                     id: 2,
@@ -390,7 +390,7 @@ export const projects = [
                 { metric: "Prefix Lookup", value: "O(L)", benchmark: "Trie Stem Autocomplete", status: "Optimal" },
                 { metric: "Graph Simulation", value: "60 FPS", benchmark: "Damped Euler Numerical Solver", status: "Optimal" },
                 { metric: "Centrality Metric", value: "Degree CD(v)", benchmark: "Hub Node Identification", status: "Optimal" },
-                { metric: "GLOBAL ADOPTION", value: "52+ Verified Users", benchmark: "7 Countries • Vercel Telemetry", status: "Telemetry" }
+                { metric: "GLOBAL ADOPTION", value: "60+ Verified Users", benchmark: "7 Countries • Vercel Telemetry", status: "Telemetry" }
             ]
         }
     },
