@@ -152,7 +152,7 @@ export const projects = [
             badgeText: "151+ Users Across 9 Countries",
             description: "Empirical telemetry and interaction metrics collected from Vercel analytics demonstrating international student usage and cross-platform verification.",
             stats: [
-                { label: "Verified Users", value: "151+ Visitors", sub: "Production Users" },
+                { label: "Verified Users", value: "151+ Students", sub: "Production Users" },
                 { label: "Interaction Sessions", value: "230+ Page Views", sub: "Algorithmic Runs" },
                 { label: "Global Reach", value: "9 Countries", sub: "India, US, UK & EU" },
                 { label: "Mobile Responsiveness", value: "79% Mobile", sub: "Cross-Platform" }
@@ -279,7 +279,7 @@ export const projects = [
             badgeText: "60+ Users Across 7 Countries",
             description: "Empirical telemetry and interaction metrics collected from Vercel analytics demonstrating multi-region usage and cross-device interaction.",
             stats: [
-                { label: "Verified Users", value: "60+ Visitors", sub: "Production Users" },
+                { label: "Verified Users", value: "60+ Students", sub: "Production Users" },
                 { label: "Interaction Sessions", value: "92+ Page Views", sub: "Graph Explorations" },
                 { label: "Global Reach", value: "7 Countries", sub: "India, US, EU, BR" },
                 { label: "Mobile Responsiveness", value: "75% Mobile", sub: "Cross-Platform" }
