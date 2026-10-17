@@ -150,7 +150,7 @@ export const projects = [
         telemetry: {
             title: "Production Telemetry & Real-World Adoption",
             badgeText: "151+ Users Across 9 Countries",
-            description: "Empirical telemetry and interaction metrics collected from Vercel analytics demonstrating international student usage and cross-platform verification.",
+            description: "Empirical telemetry and interaction metrics collected from Vercel analytics demonstrating global adoption.",
             stats: [
                 { label: "Verified Users", value: "151+ Students", sub: "Production Users" },
                 { label: "Interaction Sessions", value: "230+ Page Views", sub: "Algorithmic Runs" },
@@ -160,14 +160,14 @@ export const projects = [
             screenshots: [
                 {
                     id: 1,
-                    title: "Live Traffic & Interaction Peak",
+                    title: "Live Telemetry",
                     metricBadge: "151+ Unique Visitors • 230+ Page Views",
                     image: data1Img,
                     caption: "Live Traffic Telemetry: 151+ verified unique student visitors and 230+ algorithmic interaction page views."
                 },
                 {
                     id: 2,
-                    title: "Geographic Distribution & Device Breakdown",
+                    title: "Global Reach",
                     metricBadge: "9 Countries • 79% Mobile Responsiveness",
                     image: data2Img,
                     caption: "Global Demographics: Multi-region adoption across 9 countries (India: 134, USA: 9, UK: 2, Netherlands: 2, Switzerland, France, Philippines, Poland, Singapore) with 79% mobile & 20% desktop usage."
@@ -277,9 +277,9 @@ export const projects = [
         telemetry: {
             title: "Production Telemetry & Real-World Adoption",
             badgeText: "60+ Users Across 7 Countries",
-            description: "Empirical telemetry and interaction metrics collected from Vercel analytics demonstrating multi-region usage and cross-device interaction.",
+            description: "Empirical telemetry collected from Vercel analytics demonstrating multi-region usage and engagement.",
             stats: [
-                { label: "Verified Users", value: "60+ Students", sub: "Production Users" },
+                { label: "Verified Users", value: "60+ Active Users", sub: "Production Users" },
                 { label: "Interaction Sessions", value: "92+ Page Views", sub: "Graph Explorations" },
                 { label: "Global Reach", value: "7 Countries", sub: "India, US, EU, BR" },
                 { label: "Mobile Responsiveness", value: "75% Mobile", sub: "Cross-Platform" }
@@ -287,14 +287,14 @@ export const projects = [
             screenshots: [
                 {
                     id: 1,
-                    title: "Live Traffic & Query Engagement",
+                    title: "Live Telemetry",
                     metricBadge: "60+ Unique Visitors • 92+ Page Views",
                     image: note1Img,
                     caption: "Live Traffic Telemetry: 60+ verified unique visitors and 92+ knowledge graph interaction sessions."
                 },
                 {
                     id: 2,
-                    title: "Geographic Distribution & Device Breakdown",
+                    title: "Global Reach",
                     metricBadge: "7 Countries • 75% Mobile Responsiveness",
                     image: note2Img,
                     caption: "Global Demographics: Multi-region adoption across 7 countries (India: 42, USA: 4, Brazil, Germany, Spain, France, Greece, Sweden) with 75% mobile & 25% desktop usage."
