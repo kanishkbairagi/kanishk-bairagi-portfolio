@@ -16,14 +16,19 @@ import {
     ArrowUpRight,
     ArrowRight,
     Maximize2,
-    Code2
+    Code2,
+    Cpu,
+    GitBranch,
+    Binary,
+    LayoutGrid
 } from 'lucide-react';
 
 const categories = [
-    { id: 'all', label: 'All Projects', count: 5 },
-    { id: 'Production', label: 'Production Work', count: 1 },
-    { id: 'Interactive', label: 'Interactive Tools', count: 2 },
-    { id: 'Web Apps', label: 'Web Applications', count: 2 },
+    { id: 'all', label: 'All Artifacts', count: 5, icon: LayoutGrid, tag: 'Full Portfolio' },
+    { id: 'Production', label: 'Production Engineering', count: 1, icon: Cpu, tag: 'Client Deployment' },
+    { id: 'Algorithms', label: 'Algorithms & Data Structures', count: 1, icon: Binary, tag: 'Invariants & Complexity' },
+    { id: 'Systems', label: 'Systems & Graph Theory', count: 2, icon: GitBranch, tag: 'BM25 & DAG Solvers' },
+    { id: 'Web Apps', label: 'Web Applications', count: 1, icon: Code2, tag: 'Full-Stack & UX' },
 ];
 
 const Projects = () => {
@@ -85,22 +90,33 @@ const Projects = () => {
                 </div>
 
                 {/* Filter Tabs Navigation */}
-                <div className="mb-12 flex flex-wrap items-center gap-2.5 border-b border-white/10 pb-6">
+                <div className="mb-12 flex flex-wrap items-center gap-2 sm:gap-3 border-b border-white/10 pb-6">
                     {categories.map((cat) => {
                         const isActive = activeFilter === cat.id;
+                        const Icon = cat.icon;
                         return (
                             <button
                                 key={cat.id}
                                 onClick={() => setActiveFilter(cat.id)}
-                                className={`relative rounded-full px-5 py-2.5 text-xs font-semibold tracking-wide transition-all duration-300 sm:text-sm ${
+                                className={`group relative inline-flex items-center gap-2 rounded-xl sm:rounded-2xl px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer ${
                                     isActive
-                                        ? 'bg-accent text-ink shadow-glow-sm font-bold'
-                                        : 'border border-white/10 bg-white/5 text-zinc-400 hover:border-white/20 hover:text-cream'
+                                        ? 'border border-accent/60 bg-gradient-to-r from-accent/25 via-accent/15 to-accent/25 text-accent shadow-[0_0_20px_rgba(62,224,177,0.25)]'
+                                        : 'border border-white/10 bg-surface/60 text-zinc-400 hover:border-white/25 hover:bg-white/[0.04] hover:text-cream'
                                 }`}
                             >
-                                <span>{cat.label}</span>
-                                <span className={`ml-2 rounded-full px-2 py-0.5 text-[11px] font-mono ${
-                                    isActive ? 'bg-ink/20 text-ink' : 'bg-white/10 text-zinc-300'
+                                {Icon && (
+                                    <Icon 
+                                        size={14} 
+                                        className={`transition-colors duration-300 shrink-0 ${
+                                            isActive ? 'text-accent' : 'text-zinc-500 group-hover:text-zinc-300'
+                                        }`} 
+                                    />
+                                )}
+                                <span className={isActive ? 'font-bold text-cream' : ''}>{cat.label}</span>
+                                <span className={`ml-1 rounded-md px-1.5 py-0.5 text-[10px] font-mono font-bold transition-colors ${
+                                    isActive 
+                                        ? 'bg-accent/20 text-accent border border-accent/30' 
+                                        : 'bg-white/5 text-zinc-400 border border-white/5 group-hover:text-zinc-200'
                                 }`}>
                                     {cat.count}
                                 </span>
