@@ -24,7 +24,7 @@ import {
 } from 'lucide-react';
 
 const categories = [
-    { id: 'all', label: 'All Artifacts', count: 5, icon: LayoutGrid, tag: 'Full Portfolio' },
+    { id: 'all', label: 'All Projects', count: 5, icon: LayoutGrid, tag: 'Full Portfolio' },
     { id: 'Production', label: 'Production Engineering', count: 1, icon: Cpu, tag: 'Client Deployment' },
     { id: 'Algorithms', label: 'Algorithms & Data Structures', count: 1, icon: Binary, tag: 'Invariants & Complexity' },
     { id: 'Systems', label: 'Systems & Graph Theory', count: 2, icon: GitBranch, tag: 'BM25 & DAG Solvers' },
