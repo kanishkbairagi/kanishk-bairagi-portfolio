@@ -232,42 +232,6 @@ export const projects = [
     },
     {
         id: 3,
-        title: "Emoji Mood Diary",
-        subtitle: "Color adaptive emotion tracker and visual journal",
-        timeline: "2025",
-        role: "Frontend Developer",
-        association: "Associated with LNCT, Indore",
-        associationShort: "LNCT, Indore",
-        category: "Web Apps",
-        featured: false,
-        deployment: "Vercel Live",
-        github: "https://github.com/kanishkbairagi/emoji-based-mood-diary-with-color-adaptive-themes.git",
-        demo: "https://emoji-based-mood-diary-with-color-a.vercel.app/",
-        image: project3,
-        description: "A responsive mood journal featuring color-adaptive theme switching based on logged emotional states. Built with React and local storage for client-side persistence and animated state transitions.",
-        highlights: [
-            "Emoji-driven emotional logging with localized state persistence",
-            "Dynamic color-adaptive themes mapping emotion vectors to UI palette transitions",
-            "Animated transitions with Framer Motion and persistent journal history",
-            "Fully responsive layout deployed on Vercel"
-        ],
-        metrics: [
-            { label: "Theme Engine", value: "Color-Adaptive" },
-            { label: "Interface", value: "Emoji-Based" },
-            { label: "Deployment", value: "Vercel" }
-        ],
-        skills: [
-            "Responsive Web Design",
-            "JavaScript",
-            "React.js",
-            "UI/UX Design",
-            "Vercel Deployment",
-            "State Management"
-        ],
-        extraSkillsCount: 4
-    },
-    {
-        id: 4,
         title: "Topological Knowledge Graph & Information Retrieval (IR) Engine",
         subtitle: "Interactive Force-Directed Physics Graph & Okapi BM25 Ranking Workspace",
         timeline: "2025",
@@ -395,7 +359,7 @@ export const projects = [
         }
     },
     {
-        id: 5,
+        id: 4,
         title: "Visual Habit Graph (VHG)",
         subtitle: "Directed Acyclic Graph (DAG) Routine Engine & Behavioral Optimization System",
         timeline: "2025",
@@ -491,6 +455,42 @@ export const projects = [
                 { metric: "Stack Architecture", value: "MERN Stack", benchmark: "Node / Express / Mongo / React", status: "Full-Stack" }
             ]
         }
+    },
+    {
+        id: 5,
+        title: "Emoji Mood Diary",
+        subtitle: "Color adaptive emotion tracker and visual journal",
+        timeline: "2025",
+        role: "Frontend Developer",
+        association: "Associated with LNCT, Indore",
+        associationShort: "LNCT, Indore",
+        category: "Web Apps",
+        featured: false,
+        deployment: "Vercel Live",
+        github: "https://github.com/kanishkbairagi/emoji-based-mood-diary-with-color-adaptive-themes.git",
+        demo: "https://emoji-based-mood-diary-with-color-a.vercel.app/",
+        image: project3,
+        description: "A responsive mood journal featuring color-adaptive theme switching based on logged emotional states. Built with React and local storage for client-side persistence and animated state transitions.",
+        highlights: [
+            "Emoji-driven emotional logging with localized state persistence",
+            "Dynamic color-adaptive themes mapping emotion vectors to UI palette transitions",
+            "Animated transitions with Framer Motion and persistent journal history",
+            "Fully responsive layout deployed on Vercel"
+        ],
+        metrics: [
+            { label: "Theme Engine", value: "Color-Adaptive" },
+            { label: "Interface", value: "Emoji-Based" },
+            { label: "Deployment", value: "Vercel" }
+        ],
+        skills: [
+            "Responsive Web Design",
+            "JavaScript",
+            "React.js",
+            "UI/UX Design",
+            "Vercel Deployment",
+            "State Management"
+        ],
+        extraSkillsCount: 4
     }
 ];
 
