@@ -63,21 +63,20 @@ const ProjectCard = ({ project, index, onOpenModal }) => {
                 </div>
 
                 {/* Preview Image Frame with Quick-Action Hover */}
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#0c1017]">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#0c1017] via-[#121824] to-[#0c1017]" />
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-ink">
                     <img
                         src={project.image}
                         alt={project.title}
                         loading="eager"
                         decoding="async"
-                        className="relative z-10 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                        className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                     />
 
                     {/* Quick View / Case Study Button on Image Hover */}
-                    <div className="absolute inset-0 flex items-center justify-center gap-3 bg-ink/75 opacity-0 backdrop-blur-xs transition-opacity duration-300 group-hover:opacity-100 rounded-[inherit]">
+                    <div className="absolute inset-0 z-20 flex items-center justify-center gap-3 bg-ink/75 opacity-0 backdrop-blur-xs transition-opacity duration-300 group-hover:opacity-100 rounded-[inherit] pointer-events-none group-hover:pointer-events-auto">
                         <button
                             onClick={() => onOpenModal(project)}
-                            className="flex items-center gap-2 rounded-full border border-white/20 bg-surface/90 px-4 py-2 text-xs font-semibold text-cream shadow-lg backdrop-blur transition hover:border-accent hover:text-accent"
+                            className="flex items-center gap-2 rounded-full border border-white/20 bg-surface/90 px-4 py-2 text-xs font-semibold text-cream shadow-lg backdrop-blur transition hover:border-accent hover:text-accent cursor-pointer"
                         >
                             <Maximize2 size={14} />
                             {project.caseStudy ? 'Case Study & Specs' : 'Quick View'}
@@ -87,7 +86,7 @@ const ProjectCard = ({ project, index, onOpenModal }) => {
                                 href={project.demo}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-xs font-bold text-ink shadow-lg transition hover:bg-white"
+                                className="flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-xs font-bold text-ink shadow-lg transition hover:bg-white cursor-pointer"
                             >
                                 <ExternalLink size={14} />
                                 Live Demo

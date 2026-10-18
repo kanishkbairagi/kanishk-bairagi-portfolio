@@ -282,13 +282,12 @@ const Projects = () => {
 
                                         {/* Preview Viewport */}
                                         <div className="relative w-full overflow-hidden bg-[#07090e]">
-                                            <div className="absolute inset-0 bg-gradient-to-br from-[#0c1017] via-[#121824] to-[#0c1017]" />
                                             <img
                                                 src={flagshipProject.image}
                                                 alt={flagshipProject.title}
                                                 loading="eager"
                                                 decoding="async"
-                                                className="relative z-10 w-full h-auto block object-contain object-top transition duration-700 ease-out group-hover/frame:scale-[1.01]"
+                                                className="w-full h-auto block object-contain object-top transition duration-700 ease-out group-hover/frame:scale-[1.01]"
                                             />
                                         </div>
 
