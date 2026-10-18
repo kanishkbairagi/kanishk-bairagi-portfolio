@@ -24,6 +24,78 @@ import {
     Maximize2
 } from 'lucide-react';
 
+const TelemetryImage = ({ src, alt, className = '', containerClassName = '' }) => {
+    const [status, setStatus] = useState('loading'); // 'loading' | 'loaded' | 'error'
+    const imgRef = React.useRef(null);
+
+    useEffect(() => {
+        setStatus('loading');
+        if (imgRef.current && imgRef.current.complete) {
+            if (imgRef.current.naturalWidth > 0) {
+                setStatus('loaded');
+            }
+        }
+    }, [src]);
+
+    return (
+        <div className={`relative w-full h-full overflow-hidden bg-[#0c1017] flex items-center justify-center ${containerClassName}`}>
+            {/* High-Tech Animated Skeleton Loader */}
+            {status === 'loading' && (
+                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-gradient-to-br from-[#0c1017] via-[#121824] to-[#0c1017] p-4 select-none">
+                    {/* Glowing Shimmer Sweep */}
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-accent/15 to-transparent animate-shimmer" />
+
+                    {/* Radar Pulse Beacon */}
+                    <div className="relative mb-3 flex h-10 w-10 items-center justify-center">
+                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent/25 opacity-75" />
+                        <span className="relative inline-flex h-7 w-7 items-center justify-center rounded-full border border-accent/60 bg-accent/20 text-accent shadow-[0_0_15px_rgba(62,224,177,0.4)]">
+                            <Activity size={15} className="animate-pulse" />
+                        </span>
+                    </div>
+
+                    <p className="text-xs font-semibold text-cream tracking-wide">Rendering Telemetry Data...</p>
+                    <span className="mt-1 text-[10px] font-mono text-accent/80 flex items-center gap-1.5">
+                        <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+                        Verified Analytics Stream
+                    </span>
+                </div>
+            )}
+
+            {/* Error Fallback */}
+            {status === 'error' && (
+                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-[#0c1017] p-4 text-center">
+                    <span className="h-2 w-2 rounded-full bg-red-400 mb-2" />
+                    <p className="text-xs font-semibold text-zinc-300">Telemetry Snapshot Available</p>
+                    <button
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            setStatus('loading');
+                            if (imgRef.current) {
+                                imgRef.current.src = src;
+                            }
+                        }}
+                        className="mt-2 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-[10px] font-mono text-accent hover:bg-accent/20 transition cursor-pointer"
+                    >
+                        Retry Load
+                    </button>
+                </div>
+            )}
+
+            {/* The Telemetry Image */}
+            <img
+                ref={imgRef}
+                src={src}
+                alt={alt}
+                loading="eager"
+                decoding="async"
+                onLoad={() => setStatus('loaded')}
+                onError={() => setStatus('error')}
+                className={`${className} ${status === 'loaded' ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}
+            />
+        </div>
+    );
+};
+
 const ProjectModal = ({ project, isOpen, onClose }) => {
     const isJawam = project?.associationShort?.includes('Jawam');
     const hasCaseStudy = Boolean(project?.caseStudy);
@@ -297,7 +369,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                         </span>
                                     </div>
                                     <div className="relative min-h-[160px] max-h-[500px] w-full overflow-hidden bg-[#07090e] p-2 sm:p-3 flex items-center justify-center">
-                                        <img
+                                        <TelemetryImage
                                             src={project.image}
                                             alt={project.title}
                                             className="w-full h-auto max-h-[480px] object-contain object-center rounded-lg"
@@ -438,16 +510,14 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
 
                                                     <div
                                                         onClick={() => setSelectedImage(item)}
-                                                        className="relative aspect-[16/9] w-full cursor-zoom-in overflow-hidden bg-surface/90"
+                                                        className="relative aspect-[16/9] w-full cursor-zoom-in overflow-hidden bg-[#0c1017]"
                                                     >
-                                                        <img
+                                                        <TelemetryImage
                                                             src={item.image}
                                                             alt={item.title}
-                                                            loading="eager"
-                                                            decoding="async"
                                                             className="h-full w-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
                                                         />
-                                                        <div className="absolute inset-0 flex items-center justify-center bg-ink/60 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100">
+                                                        <div className="absolute inset-0 z-20 flex items-center justify-center bg-ink/60 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100">
                                                             <span className="inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-surface/90 px-3 py-1 sm:px-3.5 sm:py-1.5 text-[11px] sm:text-xs font-semibold text-cream shadow-xl">
                                                                 <Maximize2 size={12} className="text-accent" />
                                                                 Enlarge Telemetry
@@ -557,8 +627,8 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                     </button>
                                 </div>
 
-                                <div className="overflow-auto rounded-xl max-h-[68vh] flex items-center justify-center bg-black/80 p-2">
-                                    <img
+                                <div className="overflow-auto rounded-xl max-h-[68vh] min-h-[200px] flex items-center justify-center bg-black/80 p-2">
+                                    <TelemetryImage
                                         src={selectedImage.image}
                                         alt={selectedImage.title}
                                         className="max-h-[66vh] w-auto max-w-full rounded-lg object-contain shadow-lg"

@@ -125,3 +125,12 @@
 .animate-pulse-glow {
     animation: pulse-glow 4s ease-in-out infinite;
 }
+
+@keyframes shimmer-sweep {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+}
+
+.animate-shimmer {
+    animation: shimmer-sweep 2s ease-in-out infinite;
+}

@@ -3,10 +3,10 @@ import dataStructureImg from '../assets/projects/data-structure.png';
 import project3 from '../assets/projects/project-3.png';
 import notationsImg from '../assets/projects/notations.png';
 import habitGraphImg from '../assets/projects/Habit-graph.png';
-import data1Img from '../assets/data1.png';
-import data2Img from '../assets/data2.png';
-import note1Img from '../assets/note1.png';
-import note2Img from '../assets/note2.png';
+import data1Img from '../assets/data1.webp';
+import data2Img from '../assets/data2.webp';
+import note1Img from '../assets/note1.webp';
+import note2Img from '../assets/note2.webp';
 
 export const projects = [
     {
@@ -161,10 +161,10 @@ export const projects = [
                 {
                     id: 1,
                     title: "Live Telemetry",
-                    metricBadge: "151+ Unique Visitors • 230+ Page Views",
-                    metricBadgeMobile: "151+ Visitors • 230+ Views",
+                    metricBadge: "151+ Unique Students • 230+ Page Views",
+                    metricBadgeMobile: "151+ Students • 230+ Views",
                     image: data1Img,
-                    caption: "Live Traffic Telemetry: 151+ verified unique student visitors and 230+ algorithmic interaction page views."
+                    caption: "Live Traffic Telemetry: 151+ verified unique students and 230+ algorithmic interaction page views."
                 },
                 {
                     id: 2,
@@ -258,7 +258,7 @@ export const projects = [
             "Okapi BM25 Probabilistic Ranking: Calibrated term saturation (k1=1.2) and document length normalization (b=0.75)",
             "Inverted Index & Prefix Trie: In-memory postings list Map<Term, PostingsList> with sub-2ms O(L) prefix autocomplete",
             "Graph Theory Analytics: Degree Centrality CD(v) = deg(v)/(|V|-1) and BFS Shortest Path traversal in O(|V| + |E|)",
-            "AST-Driven Knowledge Graph: Bidirectional [[WikiLink]] parsing into an adjacency list with backlinks drawer; verified by 70+ visitors across 7 countries with 75% mobile usage."
+            "AST-Driven Knowledge Graph: Bidirectional [[WikiLink]] parsing into an adjacency list with backlinks drawer; verified by 70+ students across 7 countries with 75% mobile usage."
         ],
         metrics: [
             { label: "Graph Engine", value: "Force-Directed G=(V,E)" },
@@ -278,10 +278,10 @@ export const projects = [
         extraSkillsCount: 3,
         telemetry: {
             title: "Production Telemetry & Real-World Adoption",
-            badgeText: "70+ Users Across 7 Countries",
+            badgeText: "70+ Students Across 7 Countries",
             description: "Empirical telemetry collected from Vercel analytics demonstrating multi-region usage and engagement.",
             stats: [
-                { label: "Verified Users", value: "70+ Active Users", sub: "Production Users" },
+                { label: "Verified Users", value: "70+ Students", sub: "Production Users" },
                 { label: "Interaction Sessions", value: "112+ Page Views", sub: "Graph Explorations" },
                 { label: "Global Reach", value: "7 Countries", sub: "India, US, EU, BR" },
                 { label: "Mobile Responsiveness", value: "75% Mobile", sub: "Cross-Platform" }
@@ -290,10 +290,10 @@ export const projects = [
                 {
                     id: 1,
                     title: "Live Telemetry",
-                    metricBadge: "70+ Unique Visitors • 112+ Page Views",
-                    metricBadgeMobile: "70+ Visitors • 112+ Views",
+                    metricBadge: "70+ Unique Students • 112+ Page Views",
+                    metricBadgeMobile: "70+ Students • 112+ Views",
                     image: note1Img,
-                    caption: "Live Traffic Telemetry: 70+ verified unique visitors and 112+ knowledge graph interaction sessions."
+                    caption: "Live Traffic Telemetry: 70+ verified unique students and 112+ knowledge graph interaction sessions."
                 },
                 {
                     id: 2,

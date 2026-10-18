@@ -63,11 +63,14 @@ const ProjectCard = ({ project, index, onOpenModal }) => {
                 </div>
 
                 {/* Preview Image Frame with Quick-Action Hover */}
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-ink">
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#0c1017]">
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#0c1017] via-[#121824] to-[#0c1017]" />
                     <img
                         src={project.image}
                         alt={project.title}
-                        className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                        loading="eager"
+                        decoding="async"
+                        className="relative z-10 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                     />
 
                     {/* Quick View / Case Study Button on Image Hover */}
