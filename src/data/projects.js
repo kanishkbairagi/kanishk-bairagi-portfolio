@@ -11,99 +11,6 @@ import note2Img from '../assets/note2.webp';
 export const projects = [
     {
         id: 1,
-        title: "Jawam Infotech Official Website",
-        subtitle: "Enterprise React SPA with Asynchronous AI Streaming & Edge Performance",
-        timeline: "Jun 2026 – Sep 2026",
-        role: "Frontend Engineer Intern",
-        association: "Associated with Jawam Infotech",
-        associationShort: "Jawam Infotech",
-        category: "Production",
-        featured: true,
-        deployment: "jawaminfotech.com",
-        github: "https://github.com/kanishkbairagi/Jawam-project.git",
-        demo: "https://jawaminfotech.com/",
-        image: jawamImage,
-        description: "Engineered the primary company web application spanning 46 production routes. Implemented route-level code splitting to cut initial bundle size under 140KB, automated media compression to shrink assets from 45MB to 8.2MB, and built a streaming AI customer support assistant with client-side XSS sanitization.",
-        highlights: [
-            "Engineered 46-route React SPA with route-level code splitting (React.lazy / Suspense), keeping initial bundle under 140KB",
-            "Built streaming AI chat widget with chunked token parsing, client-side session caching, and fallback states",
-            "Automated video and image transcoding to WebP/AVIF, reducing media payload from ~45MB to ~8.2MB (~72% reduction)",
-            "Achieved 96+ Lighthouse score across Core Web Vitals (FCP: 1.05s, LCP: 1.78s, CLS: 0.00)",
-            "Sanitized input surfaces against XSS and isolated third-party API credentials behind edge proxies"
-        ],
-        metrics: [
-            { label: "Core Web Vitals", value: "96+ Score" },
-            { label: "Media Assets", value: "-72% Red." },
-            { label: "Initial JS Bundle", value: "<140 KB" },
-            { label: "Route Chunking", value: "46 Routes" }
-        ],
-        skills: [
-            "React.js Architecture",
-            "Asynchronous AI Streaming",
-            "Dynamic Code Splitting",
-            "Core Web Vitals & WebPerf",
-            "Client Session Management",
-            "XSS Sanitization & Security"
-        ],
-        extraSkillsCount: 4,
-        caseStudy: {
-            bannerTitle: "Technical Design Document (RFC) & Architecture Spec",
-            bannerDescription: "Technical design document detailing route-based dynamic imports across 46 pages, streaming AI response handling, automated asset compression, and client-side input sanitization.",
-            architectureTitle: "System & Data Flow Architecture",
-            architectureNodes: [
-                {
-                    title: "Client Layer (SPA)",
-                    desc: "46-route React architecture with dynamic imports, lazy chunk loading, and custom state hooks."
-                },
-                {
-                    title: "Streaming AI Engine",
-                    desc: "REST/SSE streaming interface parsing real-time tokens with client session caching."
-                },
-                {
-                    title: "Asset & WebPerf Pipeline",
-                    desc: "AVIF/WebP image pipeline and lazy pre-fetching reducing media payload by ~72% (FCP < 1.1s)."
-                },
-                {
-                    title: "Security & Input Layer",
-                    desc: "Client-side DOM sanitization against XSS, sanitized form dispatch, and edge API key isolation."
-                }
-            ],
-            deepDives: [
-                {
-                    title: "Component & State Architecture",
-                    problem: "A 46-page enterprise SPA without code splitting would yield a multi-megabyte bundle, causing slow initial page loads and high bounce rates.",
-                    solution: "Used React.lazy and Suspense boundaries at the route level to split code into on-demand chunks. Kept shared navigation state in lightweight custom hooks, reducing the initial gzipped JavaScript bundle to under 140KB."
-                },
-                {
-                    title: "Asynchronous AI Chat Streaming & Context Management",
-                    problem: "Waiting for complete LLM responses over standard REST requests caused long loading delays and poor user feedback.",
-                    solution: "Connected the chat widget to an asynchronous streaming endpoint that renders tokens chunk by chunk as they arrive. Implemented client-side session caching and bounded chat history to prevent memory leaks and token limit overruns."
-                },
-                {
-                    title: "Network & Asset Optimization Pipeline",
-                    problem: "13 high-definition hero videos and uncompressed graphics totaled ~45MB, severely degrading First Contentful Paint on mobile networks.",
-                    solution: "Engineered an automated asset transcoding workflow targeting modern WebP/AVIF formats with responsive srcset bindings. Introduced intersection-observer-based lazy loading, slashing streaming media footprint by ~72% to ~8.2MB while preserving an initial JS bundle under 140KB."
-                },
-                {
-                    title: "Security, Sanitization & Standards",
-                    problem: "Unsanitized user inquiries or raw streaming Markdown from the AI model risked Cross-Site Scripting (XSS) and client-side DOM vulnerabilities.",
-                    solution: "Implemented client-side sanitization on all input buffers and streamed AI Markdown prior to DOM insertion. Enforced semantic HTML5 landmarks and ARIA tags for WCAG 2.1 AA accessibility compliance."
-                }
-            ],
-            benchmarksTitle: "Core Web Vitals & Quantified Performance Benchmarks",
-            benchmarksSub: "Chrome Lighthouse Verified",
-            benchmarks: [
-                { metric: "Lighthouse Performance", value: "96 / 100", benchmark: "Target: > 90", status: "Pass" },
-                { metric: "First Contentful Paint (FCP)", value: "1.05s", benchmark: "Target: < 1.8s", status: "Optimal" },
-                { metric: "Largest Contentful Paint (LCP)", value: "1.78s", benchmark: "Target: < 2.5s", status: "Optimal" },
-                { metric: "Cumulative Layout Shift (CLS)", value: "0.00", benchmark: "Target: < 0.10", status: "Optimal" },
-                { metric: "Initial JS Bundle", value: "< 140 KB", benchmark: "Gzipped Entry Target: < 200 KB", status: "Optimal" },
-                { metric: "Transcoded Media Assets", value: "8.2 MB", benchmark: "Raw Video/Images: ~45 MB", status: "-72% Compressed" }
-            ]
-        }
-    },
-    {
-        id: 2,
         title: "Algorithmic State Engine & Data Structure Visualizer",
         subtitle: "Interactive Algorithmic State Engine & Invariant Visualizer",
         timeline: "2025",
@@ -111,7 +18,7 @@ export const projects = [
         association: "Associated with LNCT, Indore",
         associationShort: "LNCT, Indore",
         category: "Algorithms",
-        featured: false,
+        featured: true,
         deployment: "Vercel Live",
         github: "https://github.com/kanishkbairagi/data-structure-visualizerr",
         demo: "https://data-structure-visualizerr.vercel.app",
@@ -134,9 +41,10 @@ export const projects = [
             "Amortized analysis demonstrator with buffer doubling (C -> 2C); evaluated by 151+ international student users across 9 countries with 79% mobile engagement."
         ],
         metrics: [
-            { label: "Core ADTs", value: "7 Structures" },
-            { label: "Engine", value: "State-Driven Invariant Engine" },
-            { label: "Complexity", value: "Real-Time Big-O Instrumentation" }
+            { label: "Global Users", value: "151+ Students", sub: "Across 9 Countries" },
+            { label: "Core ADTs", value: "7 Structures", sub: "AVL, Graph, Trie & Arrays" },
+            { label: "Tree Invariant", value: "O(log N)", sub: "Dynamic AVL Self-Balancing" },
+            { label: "Complexity", value: "Real-Time Big-O", sub: "Zero-Overhead Profiling" }
         ],
         skills: [
             "Algorithm Analysis",
@@ -233,7 +141,7 @@ export const projects = [
         }
     },
     {
-        id: 3,
+        id: 2,
         title: "Topological Knowledge Graph & Information Retrieval (IR) Engine",
         subtitle: "Interactive Force-Directed Physics Graph & Okapi BM25 Ranking Workspace",
         timeline: "2025",
@@ -363,7 +271,7 @@ export const projects = [
         }
     },
     {
-        id: 4,
+        id: 3,
         title: "Visual Habit Graph (VHG)",
         subtitle: "Directed Acyclic Graph (DAG) Routine Engine & Behavioral Optimization System",
         timeline: "2025",
@@ -457,6 +365,99 @@ export const projects = [
                 { metric: "Keystone Centrality", value: "O(|V|·(|V|+|E|))", benchmark: "Transitive Reachability BFS", status: "Optimal" },
                 { metric: "Auxiliary Space", value: "O(|V|)", benchmark: "State Machine & Call Stack", status: "Optimal" },
                 { metric: "Stack Architecture", value: "MERN Stack", benchmark: "Node / Express / Mongo / React", status: "Full-Stack" }
+            ]
+        }
+    },
+    {
+        id: 4,
+        title: "Jawam Infotech Official Website",
+        subtitle: "Enterprise React SPA with Asynchronous AI Streaming & Edge Performance",
+        timeline: "Jun 2026 – Sep 2026",
+        role: "Frontend Engineer Intern",
+        association: "Associated with Jawam Infotech",
+        associationShort: "Jawam Infotech",
+        category: "Production",
+        featured: false,
+        deployment: "jawaminfotech.com",
+        github: "https://github.com/kanishkbairagi/Jawam-project.git",
+        demo: "https://jawaminfotech.com/",
+        image: jawamImage,
+        description: "Engineered the primary company web application spanning 46 production routes. Implemented route-level code splitting to cut initial bundle size under 140KB, automated media compression to shrink assets from 45MB to 8.2MB, and built a streaming AI customer support assistant with client-side XSS sanitization.",
+        highlights: [
+            "Engineered 46-route React SPA with route-level code splitting (React.lazy / Suspense), keeping initial bundle under 140KB",
+            "Built streaming AI chat widget with chunked token parsing, client-side session caching, and fallback states",
+            "Automated video and image transcoding to WebP/AVIF, reducing media payload from ~45MB to ~8.2MB (~72% reduction)",
+            "Achieved 96+ Lighthouse score across Core Web Vitals (FCP: 1.05s, LCP: 1.78s, CLS: 0.00)",
+            "Sanitized input surfaces against XSS and isolated third-party API credentials behind edge proxies"
+        ],
+        metrics: [
+            { label: "Core Web Vitals", value: "96+ Score" },
+            { label: "Media Assets", value: "-72% Red." },
+            { label: "Initial JS Bundle", value: "<140 KB" },
+            { label: "Route Chunking", value: "46 Routes" }
+        ],
+        skills: [
+            "React.js Architecture",
+            "Asynchronous AI Streaming",
+            "Dynamic Code Splitting",
+            "Core Web Vitals & WebPerf",
+            "Client Session Management",
+            "XSS Sanitization & Security"
+        ],
+        extraSkillsCount: 4,
+        caseStudy: {
+            bannerTitle: "Technical Design Document (RFC) & Architecture Spec",
+            bannerDescription: "Technical design document detailing route-based dynamic imports across 46 pages, streaming AI response handling, automated asset compression, and client-side input sanitization.",
+            architectureTitle: "System & Data Flow Architecture",
+            architectureNodes: [
+                {
+                    title: "Client Layer (SPA)",
+                    desc: "46-route React architecture with dynamic imports, lazy chunk loading, and custom state hooks."
+                },
+                {
+                    title: "Streaming AI Engine",
+                    desc: "REST/SSE streaming interface parsing real-time tokens with client session caching."
+                },
+                {
+                    title: "Asset & WebPerf Pipeline",
+                    desc: "AVIF/WebP image pipeline and lazy pre-fetching reducing media payload by ~72% (FCP < 1.1s)."
+                },
+                {
+                    title: "Security & Input Layer",
+                    desc: "Client-side DOM sanitization against XSS, sanitized form dispatch, and edge API key isolation."
+                }
+            ],
+            deepDives: [
+                {
+                    title: "Component & State Architecture",
+                    problem: "A 46-page enterprise SPA without code splitting would yield a multi-megabyte bundle, causing slow initial page loads and high bounce rates.",
+                    solution: "Used React.lazy and Suspense boundaries at the route level to split code into on-demand chunks. Kept shared navigation state in lightweight custom hooks, reducing the initial gzipped JavaScript bundle to under 140KB."
+                },
+                {
+                    title: "Asynchronous AI Chat Streaming & Context Management",
+                    problem: "Waiting for complete LLM responses over standard REST requests caused long loading delays and poor user feedback.",
+                    solution: "Connected the chat widget to an asynchronous streaming endpoint that renders tokens chunk by chunk as they arrive. Implemented client-side session caching and bounded chat history to prevent memory leaks and token limit overruns."
+                },
+                {
+                    title: "Network & Asset Optimization Pipeline",
+                    problem: "13 high-definition hero videos and uncompressed graphics totaled ~45MB, severely degrading First Contentful Paint on mobile networks.",
+                    solution: "Engineered an automated asset transcoding workflow targeting modern WebP/AVIF formats with responsive srcset bindings. Introduced intersection-observer-based lazy loading, slashing streaming media footprint by ~72% to ~8.2MB while preserving an initial JS bundle under 140KB."
+                },
+                {
+                    title: "Security, Sanitization & Standards",
+                    problem: "Unsanitized user inquiries or raw streaming Markdown from the AI model risked Cross-Site Scripting (XSS) and client-side DOM vulnerabilities.",
+                    solution: "Implemented client-side sanitization on all input buffers and streamed AI Markdown prior to DOM insertion. Enforced semantic HTML5 landmarks and ARIA tags for WCAG 2.1 AA accessibility compliance."
+                }
+            ],
+            benchmarksTitle: "Core Web Vitals & Quantified Performance Benchmarks",
+            benchmarksSub: "Chrome Lighthouse Verified",
+            benchmarks: [
+                { metric: "Lighthouse Performance", value: "96 / 100", benchmark: "Target: > 90", status: "Pass" },
+                { metric: "First Contentful Paint (FCP)", value: "1.05s", benchmark: "Target: < 1.8s", status: "Optimal" },
+                { metric: "Largest Contentful Paint (LCP)", value: "1.78s", benchmark: "Target: < 2.5s", status: "Optimal" },
+                { metric: "Cumulative Layout Shift (CLS)", value: "0.00", benchmark: "Target: < 0.10", status: "Optimal" },
+                { metric: "Initial JS Bundle", value: "< 140 KB", benchmark: "Gzipped Entry Target: < 200 KB", status: "Optimal" },
+                { metric: "Transcoded Media Assets", value: "8.2 MB", benchmark: "Raw Video/Images: ~45 MB", status: "-72% Compressed" }
             ]
         }
     },

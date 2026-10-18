@@ -8,6 +8,7 @@ import {
     Github, 
     Gem, 
     Building2, 
+    GraduationCap,
     CheckCircle2, 
     Calendar, 
     Globe, 
@@ -65,15 +66,15 @@ const Projects = () => {
         ? projects
         : projects.filter((p) => p.category === activeFilter);
 
-    // Flagship project (Jawam Infotech)
+    // Flagship project (DSA Visualizer - ID: 1)
     const flagshipProject = projects.find((p) => p.id === 1);
     
     // Remaining projects for grid
     const gridProjects = activeFilter === 'all'
         ? projects.filter((p) => p.id !== 1)
-        : filteredProjects.filter((p) => p.id !== (activeFilter === 'Production' ? 0 : 1));
+        : filteredProjects.filter((p) => p.id !== 1);
 
-    const showFlagship = (activeFilter === 'all' || activeFilter === 'Production') && flagshipProject;
+    const showFlagship = (activeFilter === 'all' || activeFilter === 'Algorithms') && flagshipProject;
 
     return (
         <section id="projects" className="relative scroll-mt-[-30px] py-24 sm:py-32">
@@ -152,7 +153,7 @@ const Projects = () => {
                             <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                                 <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/15 px-2.5 py-0.5 sm:px-3 sm:py-1 text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-accent">
                                     <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-                                    Flagship Production Project
+                                    Flagship Algorithmic System
                                 </span>
                                 {flagshipProject.timeline && (
                                     <span className="flex items-center gap-1.5 text-xs text-zinc-400">
@@ -163,7 +164,11 @@ const Projects = () => {
                             </div>
 
                             <div className="flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-2.5 py-0.5 sm:px-3 sm:py-1 text-[11px] sm:text-xs font-medium text-zinc-300">
-                                <Building2 size={12} className="text-accent shrink-0" />
+                                {flagshipProject.associationShort?.includes('Jawam') ? (
+                                    <Building2 size={12} className="text-accent shrink-0" />
+                                ) : (
+                                    <GraduationCap size={12} className="text-accent shrink-0" />
+                                )}
                                 <span>{flagshipProject.association}</span>
                             </div>
                         </div>
@@ -271,9 +276,9 @@ const Projects = () => {
                                                 <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-amber-400/80" />
                                                 <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-accent/80" />
                                             </div>
-                                            <div className="flex max-w-[130px] min-[360px]:max-w-[180px] sm:max-w-[200px] items-center gap-1.5 truncate rounded-full bg-ink/80 px-2.5 py-0.5 text-[10px] sm:text-[11px] text-zinc-400">
+                                            <div className="flex max-w-[170px] min-[360px]:max-w-[220px] sm:max-w-[260px] items-center gap-1.5 truncate rounded-full bg-ink/80 px-2.5 py-0.5 text-[10px] sm:text-[11px] text-zinc-400">
                                                 <Globe size={11} className="text-accent shrink-0" />
-                                                <span className="truncate">https://jawaminfotech.com</span>
+                                                <span className="truncate">{flagshipProject.demo ? flagshipProject.demo.replace(/^https?:\/\//, '').replace(/\/$/, '') : 'data-structure-visualizerr.vercel.app'}</span>
                                             </div>
                                             <span className="text-[9px] font-semibold uppercase tracking-wider text-accent shrink-0">
                                                 SSL SECURE
@@ -295,10 +300,10 @@ const Projects = () => {
                                         <div className="flex items-center justify-between border-t border-white/10 bg-surface/90 px-3 py-1.5 text-[10px] sm:text-[11px]">
                                             <div className="flex items-center gap-1.5 truncate">
                                                 <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse shrink-0" />
-                                                <span className="font-semibold text-cream truncate">Live Enterprise</span>
+                                                <span className="font-semibold text-cream truncate">{flagshipProject.deployment || 'Production Live'}</span>
                                             </div>
                                             <span className="font-mono text-[10px] text-accent truncate">
-                                                46 Pages • 13 Videos
+                                                {flagshipProject.metaBadges?.[0] || '151+ Students Across 9 Countries'}
                                             </span>
                                         </div>
                                     </div>
@@ -311,14 +316,21 @@ const Projects = () => {
                                     {flagshipProject.metrics.map((m, idx) => (
                                         <div
                                             key={idx}
-                                            className="rounded-xl sm:rounded-2xl border border-white/10 bg-ink/50 p-3 sm:p-4 text-center backdrop-blur transition hover:border-accent/30 overflow-hidden"
+                                            className="group/metric rounded-xl sm:rounded-2xl border border-white/10 bg-ink/50 p-3 sm:p-4 text-center backdrop-blur transition-all duration-300 hover:border-accent/40 hover:bg-white/[0.02] overflow-hidden flex flex-col justify-between"
                                         >
-                                            <p className="text-[10px] uppercase tracking-wider text-zinc-400 truncate">
-                                                {m.label}
-                                            </p>
-                                            <p className="mt-1 font-display text-base min-[360px]:text-lg sm:text-2xl font-black text-accent break-words leading-tight">
-                                                {m.value}
-                                            </p>
+                                            <div>
+                                                <p className="text-[10px] font-mono uppercase tracking-widest text-zinc-400 group-hover/metric:text-zinc-300 transition-colors">
+                                                    {m.label}
+                                                </p>
+                                                <p className="mt-1 font-display text-lg min-[360px]:text-xl sm:text-2xl font-black text-accent tracking-tight leading-tight">
+                                                    {m.value}
+                                                </p>
+                                            </div>
+                                            {m.sub && (
+                                                <p className="mt-1 text-[11px] font-medium text-zinc-400">
+                                                    {m.sub}
+                                                </p>
+                                            )}
                                         </div>
                                     ))}
                                 </div>
@@ -349,7 +361,7 @@ const Projects = () => {
                                     <div className="flex flex-wrap items-center gap-2">
                                         <div className="flex items-center gap-2 rounded-full border border-white/10 bg-ink/60 px-3 py-1.5 text-xs text-zinc-300">
                                             <Gem size={13} className="text-accent" />
-                                            <span>Enterprise Architecture, AI Streaming <span className="font-semibold text-accent">and +4 skills</span></span>
+                                            <span>{flagshipProject.skills.slice(0, 2).join(', ')} <span className="font-semibold text-accent">and +{flagshipProject.extraSkillsCount || 4} skills</span></span>
                                         </div>
                                         {flagshipProject.skills.map((skill) => (
                                             <span
