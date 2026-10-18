@@ -399,6 +399,11 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                                 <p className="mt-1 font-display text-xs min-[360px]:text-sm sm:text-base font-bold text-accent leading-tight break-words">
                                                     {m.value}
                                                 </p>
+                                                {m.sub && (
+                                                    <p className="mt-1 text-[10px] text-zinc-400 font-medium leading-tight">
+                                                        {m.sub}
+                                                    </p>
+                                                )}
                                             </div>
                                         ))}
                                     </div>

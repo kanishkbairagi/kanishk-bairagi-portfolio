@@ -21,15 +21,16 @@ import {
     Cpu,
     GitBranch,
     Binary,
-    LayoutGrid
+    LayoutGrid,
+    ShieldCheck
 } from 'lucide-react';
 
 const categories = [
     { id: 'all', label: 'All Projects', count: 5, icon: LayoutGrid, tag: 'Full Portfolio' },
-    { id: 'Production', label: 'Production Engineering', count: 1, icon: Cpu, tag: 'Client Deployment' },
     { id: 'Algorithms', label: 'Algorithms & Data Structures', count: 1, icon: Binary, tag: 'Invariants & Complexity' },
     { id: 'Systems', label: 'Systems & Graph Theory', count: 2, icon: GitBranch, tag: 'BM25 & DAG Solvers' },
-    { id: 'Web Apps', label: 'Web Applications', count: 1, icon: Code2, tag: 'Full-Stack & UX' },
+    { id: 'Security', label: 'Security & Cryptography', count: 1, icon: ShieldCheck, tag: 'Zero-Knowledge E2EE' },
+    { id: 'Production', label: 'Production Engineering', count: 1, icon: Cpu, tag: 'Client Deployment' },
 ];
 
 const Projects = () => {
@@ -113,7 +114,7 @@ const Projects = () => {
                             <button
                                 key={cat.id}
                                 onClick={() => setActiveFilter(cat.id)}
-                                className={`group relative inline-flex items-center gap-2 rounded-xl sm:rounded-2xl px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer ${
+                                className={`group relative inline-flex items-center gap-1.5 sm:gap-2 rounded-xl sm:rounded-2xl px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer ${
                                     isActive
                                         ? 'border border-accent/60 bg-gradient-to-r from-accent/25 via-accent/15 to-accent/25 text-accent shadow-[0_0_20px_rgba(62,224,177,0.25)]'
                                         : 'border border-white/10 bg-surface/60 text-zinc-400 hover:border-white/25 hover:bg-white/[0.04] hover:text-cream'
