@@ -425,23 +425,26 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                                     key={idx}
                                                     className="group flex flex-col overflow-hidden rounded-xl sm:rounded-2xl border border-white/15 bg-ink/80 transition-all hover:border-accent/40 hover:shadow-[0_10px_30px_rgba(0,0,0,0.6)]"
                                                 >
-                                                    <div className="flex items-center justify-between gap-1.5 border-b border-white/10 bg-surface/80 px-3 py-2 sm:px-4 sm:py-2.5">
-                                                        <div className="flex items-center gap-1.5 min-w-0 pr-1">
+                                                    <div className="flex flex-wrap items-center justify-between gap-1.5 border-b border-white/10 bg-surface/80 px-3 py-2 sm:px-4 sm:py-2.5">
+                                                        <div className="flex items-center gap-1.5 min-w-0">
                                                             <span className="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-accent animate-pulse shrink-0" />
-                                                            <span className="text-[11px] sm:text-xs font-semibold text-cream whitespace-nowrap">{item.title}</span>
+                                                            <span className="text-[11px] sm:text-xs font-semibold text-cream truncate">{item.title}</span>
                                                         </div>
                                                         <span className="rounded-md border border-accent/30 bg-accent/10 px-1.5 py-0.5 sm:px-2 text-[9px] sm:text-[10px] font-mono font-medium text-accent shrink-0">
-                                                            {item.metricBadge}
+                                                            <span className="inline sm:hidden">{item.metricBadgeMobile || item.metricBadge}</span>
+                                                            <span className="hidden sm:inline">{item.metricBadge}</span>
                                                         </span>
                                                     </div>
 
                                                     <div
                                                         onClick={() => setSelectedImage(item)}
-                                                        className="relative aspect-[16/9] w-full cursor-zoom-in overflow-hidden bg-black/60"
+                                                        className="relative aspect-[16/9] w-full cursor-zoom-in overflow-hidden bg-surface/90"
                                                     >
                                                         <img
                                                             src={item.image}
                                                             alt={item.title}
+                                                            loading="eager"
+                                                            decoding="async"
                                                             className="h-full w-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
                                                         />
                                                         <div className="absolute inset-0 flex items-center justify-center bg-ink/60 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projects } from '../data/projects';
 import ProjectCard from './ProjectCard';
@@ -35,6 +35,20 @@ const Projects = () => {
     const [activeFilter, setActiveFilter] = useState('all');
     const [selectedProject, setSelectedProject] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
+
+    // Eagerly preload telemetry images in browser memory on load
+    useEffect(() => {
+        projects.forEach(p => {
+            if (p.telemetry?.screenshots) {
+                p.telemetry.screenshots.forEach(s => {
+                    if (s.image) {
+                        const img = new Image();
+                        img.src = s.image;
+                    }
+                });
+            }
+        });
+    }, []);
 
     const handleOpenModal = (project) => {
         setSelectedProject(project);
