@@ -6,7 +6,7 @@ const experiences = [
         year: '2026',
         company: 'Jawam Infotech',
         role: 'Software Developer',
-        period: 'Sep 2026 — Present · Full-time',
+        period: 'Oct 2026 — Present · Full-time',
         location: 'Indore, MP · On-site',
         description:
             'Promoted to full-time Software Developer following core platform contributions. Architect responsive client applications and modular frontend architectures integrated with backend REST APIs. Focus on system performance, API response caching, component reusability, and reliable production deployment workflows.',
@@ -15,8 +15,8 @@ const experiences = [
     {
         year: '2026',
         company: 'Jawam Infotech',
-        role: 'Frontend Intern',
-        period: 'Jun 2026 — Sep 2026 · 4 mos',
+        role: 'Frontend Developer Intern',
+        period: 'Jun 2026 — Sep 2026 · 3 mos',
         location: 'Indore, MP · On-site',
         description:
             'Engineered the company\'s 46-route React SPA, reducing the initial JavaScript bundle to <140KB using route-based dynamic imports. Built an asynchronous streaming AI chat widget with client-side session caching and token sanitization. Transcoded video and image assets to modern WebP/AVIF formats, reducing total media payload by ~72% and scoring 96+ across Core Web Vitals.',
