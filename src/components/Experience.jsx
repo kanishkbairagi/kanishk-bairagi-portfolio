@@ -5,12 +5,12 @@ const experiences = [
     {
         year: '2026',
         company: 'Jawam Infotech',
-        role: 'Frontend Developer',
+        role: 'Software Developer',
         period: 'Sep 2026 — Present · Full-time',
         location: 'Indore, MP · On-site',
         description:
-            'Promoted from intern to full-time. Lead frontend development for client web apps, focusing on component modularity, fluid Framer Motion animations, and Lighthouse performance optimization.',
-        focusAreas: ['Tailwind CSS', 'JavaScript', 'React.js', 'Framer Motion', 'Product UX'],
+            'Promoted to full-time Software Developer following core platform contributions. Architect responsive client applications and modular frontend architectures integrated with backend REST APIs. Focus on system performance, API response caching, component reusability, and reliable production deployment workflows.',
+        focusAreas: ['React.js', 'TypeScript', 'Node.js', 'REST APIs', 'State Management', 'Web Performance', 'Git Workflow'],
     },
     {
         year: '2026',
