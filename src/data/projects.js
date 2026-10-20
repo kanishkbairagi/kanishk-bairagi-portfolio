@@ -155,18 +155,18 @@ export const projects = [
         demo: "https://notation-app-six.vercel.app/",
         image: notationsImg,
         metaBadges: [
-            "70+ Verified Users (7 Countries)",
+            "100+ Verified Users (150+ Views)",
             "BM25 Sub-2ms Queries",
             "Vercel Telemetry"
         ],
-        description: "A graph-based knowledge base that combines an interactive force-directed graph with an Okapi BM25 search engine. Simulates graph layout using Coulomb repulsion and Hooke spring physics on HTML5 Canvas at 60 FPS. Features sub-2ms search queries powered by an inverted index and prefix Trie, along with BFS shortest-path traversal between connected notes. Evaluated by 70+ users across 7 countries.",
-        overviewDescription: "A graph-based knowledge base combining an interactive force-directed graph with an Okapi BM25 search engine. Simulates graph layout using Coulomb repulsion and Hooke spring physics on HTML5 Canvas at 60 FPS with sub-2ms queries. Validated by 70+ global users across 7 countries.",
+        description: "A graph-based knowledge base that combines an interactive force-directed graph with an Okapi BM25 search engine. Simulates graph layout using Coulomb repulsion and Hooke spring physics on HTML5 Canvas at 60 FPS. Features sub-2ms search queries powered by an inverted index and prefix Trie, along with BFS shortest-path traversal between connected notes. Evaluated by 100+ international users with 150+ interaction sessions across 8 countries.",
+        overviewDescription: "A graph-based knowledge base combining an interactive force-directed graph with an Okapi BM25 search engine. Simulates graph layout using Coulomb repulsion and Hooke spring physics on HTML5 Canvas at 60 FPS with sub-2ms queries. Validated by 100+ global users with 150+ interaction sessions across 8 countries.",
         highlights: [
             "Force-Directed Physics on HTML5 Canvas: Coulomb repulsion, Hooke spring attraction & damping velocity relaxation at 60 FPS",
             "Okapi BM25 Probabilistic Ranking: Calibrated term saturation (k1=1.2) and document length normalization (b=0.75)",
             "Inverted Index & Prefix Trie: In-memory postings list Map<Term, PostingsList> with sub-2ms O(L) prefix autocomplete",
             "Graph Theory Analytics: Degree Centrality CD(v) = deg(v)/(|V|-1) and BFS Shortest Path traversal in O(|V| + |E|)",
-            "AST-Driven Knowledge Graph: Bidirectional [[WikiLink]] parsing into an adjacency list with backlinks drawer; verified by 70+ students across 7 countries with 75% mobile usage."
+            "AST-Driven Knowledge Graph: Bidirectional [[WikiLink]] parsing into an adjacency list with backlinks drawer; verified by 100+ users with 150+ graph interaction sessions across 8 countries."
         ],
         metrics: [
             { label: "Graph Engine", value: "Force-Directed G=(V,E)" },
@@ -186,30 +186,30 @@ export const projects = [
         extraSkillsCount: 3,
         telemetry: {
             title: "Production Telemetry & Real-World Adoption",
-            badgeText: "70+ Students Across 7 Countries",
+            badgeText: "100+ Users • 150+ Page Views",
             description: "Empirical telemetry collected from Vercel analytics demonstrating multi-region usage and engagement.",
             stats: [
-                { label: "Verified Users", value: "70+ Students", sub: "Production Users" },
-                { label: "Interaction Sessions", value: "112+ Page Views", sub: "Graph Explorations" },
-                { label: "Global Reach", value: "7 Countries", sub: "India, US, EU, BR" },
+                { label: "Verified Users", value: "100+ Users", sub: "Production Traffic" },
+                { label: "Interaction Sessions", value: "150+ Page Views", sub: "Graph Explorations" },
+                { label: "Global Reach", value: "8 Countries", sub: "India, US, EU, BR" },
                 { label: "Mobile Responsiveness", value: "75% Mobile", sub: "Cross-Platform" }
             ],
             screenshots: [
                 {
                     id: 1,
                     title: "Live Telemetry",
-                    metricBadge: "70+ Unique Students • 112+ Page Views",
-                    metricBadgeMobile: "70+ Students • 112+ Views",
+                    metricBadge: "101 Users • 150 Page Views",
+                    metricBadgeMobile: "100+ Users • 150+ Views",
                     image: note1Img,
-                    caption: "Live Traffic Telemetry: 70+ verified unique students and 112+ knowledge graph interaction sessions."
+                    caption: "Live Traffic Telemetry: 100+ verified unique users and 150+ knowledge graph interaction sessions recorded on Vercel Analytics."
                 },
                 {
                     id: 2,
                     title: "Global Reach",
-                    metricBadge: "7 Countries • 75% Mobile Responsiveness",
-                    metricBadgeMobile: "7 Countries • 75% Mobile",
+                    metricBadge: "8 Countries • 75% Mobile Responsiveness",
+                    metricBadgeMobile: "8 Countries • 75% Mobile",
                     image: note2Img,
-                    caption: "Global Demographics: Multi-region adoption across 7 countries (India: 42, USA: 4, Brazil, Germany, Spain, France, Greece, Sweden) with 75% mobile & 25% desktop usage."
+                    caption: "Global Demographics: Multi-region adoption across 8 countries (India: 42, USA: 4, Brazil, Germany, Spain, France, Greece, Sweden) with 75% mobile & 25% desktop usage."
                 }
             ]
         },
@@ -266,7 +266,7 @@ export const projects = [
                 { metric: "Prefix Lookup", value: "O(L)", benchmark: "Trie Stem Autocomplete", status: "Optimal" },
                 { metric: "Graph Simulation", value: "60 FPS", benchmark: "Damped Euler Numerical Solver", status: "Optimal" },
                 { metric: "Centrality Metric", value: "Degree CD(v)", benchmark: "Hub Node Identification", status: "Optimal" },
-                { metric: "GLOBAL ADOPTION", value: "70+ Verified Users", benchmark: "7 Countries • Vercel Telemetry", status: "Telemetry" }
+                { metric: "GLOBAL ADOPTION", value: "100+ Verified Users", benchmark: "150+ Views • Vercel Telemetry", status: "Telemetry" }
             ]
         }
     },
