@@ -185,7 +185,7 @@ const Hero = () => {
                             <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
                             <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80" />
                             <span className="h-2.5 w-2.5 rounded-full bg-accent/80" />
-                            <span className="ml-3 text-xs text-zinc-500">Web • APIs • MERN-Stack</span>
+                            <span className="ml-3 text-xs text-zinc-500">Web • APIs • Full-Stack</span>
                         </div>
                         <img
                             src={hero}
@@ -196,7 +196,7 @@ const Hero = () => {
 
                     <div className="absolute -left-10 bottom-14 rounded-2xl border border-white/10 bg-ink/85 px-4 py-3 backdrop-blur-xl shadow-lg transition duration-300 hover:scale-105 hover:border-accent/30">
                         <p className="text-[10px] uppercase tracking-[0.2em] text-zinc-500">Currently</p>
-                        <p className="mt-1 text-sm font-semibold text-cream">Frontend Developer</p>
+                        <p className="mt-1 text-sm font-semibold text-cream">Sofware Developer</p>
                     </div>
                     <div className="absolute -right-4 top-16 rounded-2xl border border-accent/40 bg-accent px-4 py-3 text-ink shadow-glow transition duration-300 hover:scale-105">
                         <p className="text-[10px] font-semibold uppercase tracking-[0.18em]">Focus</p>
