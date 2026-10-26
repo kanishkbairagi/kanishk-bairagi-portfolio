@@ -154,23 +154,6 @@ const Hero = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.5 }}
-                        className="mt-12 grid max-w-lg grid-cols-3 gap-4 border-t border-white/10 pt-8"
-                    >
-                        {[
-                            { n: '05', l: 'Shipped projects' },
-                            { n: '02', l: 'Product teams' },
-                            { n: 'MERN', l: 'Core stack' },
-                        ].map((stat) => (
-                            <div key={stat.l}>
-                                <p className="font-display text-2xl font-bold text-cream">{stat.n}</p>
-                                <p className="mt-1 text-xs uppercase tracking-[0.16em] text-zinc-500">{stat.l}</p>
-                            </div>
-                        ))}
-                    </motion.div>
                 </div>
 
                 <motion.div
