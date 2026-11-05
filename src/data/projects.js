@@ -24,12 +24,12 @@ export const projects = [
         demo: "https://data-structure-visualizerr.vercel.app",
         image: dataStructureImg,
         metaBadges: [
-            "151+ Verified Users (9 Countries)",
+            "166+ Verified Users (9 Countries)",
             "O(log N) AVL Guaranteed",
             "Vercel Telemetry"
         ],
-        description: "Built an interactive execution engine to help students visualize abstract data structures and runtime invariants in real time. Features animated AVL tree self-balancing across all 4 rotation archetypes, Dijkstra's shortest path relaxation, and contiguous dynamic array buffer doubling (C -> 2C). Validated by 151+ international students across 9 countries.",
-        overviewDescription: "Built an interactive execution engine to help students visualize abstract data structures and runtime invariants in real time. Features animated AVL tree self-balancing across all 4 rotation archetypes, Dijkstra's shortest path relaxation, and contiguous dynamic array buffer doubling (C -> 2C). Validated by 151+ international students across 9 countries during computer science coursework.",
+        description: "Built an interactive execution engine to help students visualize abstract data structures and runtime invariants in real time. Features animated AVL tree self-balancing across all 4 rotation archetypes, Dijkstra's shortest path relaxation, and contiguous dynamic array buffer doubling (C -> 2C). Validated by 166+ international students across 9 countries.",
+        overviewDescription: "Built an interactive execution engine to help students visualize abstract data structures and runtime invariants in real time. Features animated AVL tree self-balancing across all 4 rotation archetypes, Dijkstra's shortest path relaxation, and contiguous dynamic array buffer doubling (C -> 2C). Validated by 166+ international students across 9 countries during computer science coursework.",
         cardHighlights: [
             "Dynamic AVL Self-Balancing with 4 Rotation Archetypes (LL, RR, LR, RL) maintaining strict O(log N) search bounds.",
             "Dijkstra's Shortest Path Tree (SPT) with Real-Time Distance Vector Relaxation & Priority Queue simulation."
@@ -38,10 +38,10 @@ export const projects = [
             "Dynamic AVL Self-Balancing with 4 Rotation Archetypes (LL, RR, LR, RL) enforcing height bounds h < 1.44 log2(N+2).",
             "Dijkstra's Shortest Path Tree (SPT) with real-time distance-vector relaxation and Priority Queue extraction.",
             "Trie lexicographical traversal with prefix search in O(L) time where L is word length.",
-            "Amortized analysis demonstrator with buffer doubling (C -> 2C); evaluated by 151+ international student users across 9 countries with 79% mobile engagement."
+            "Amortized analysis demonstrator with buffer doubling (C -> 2C); evaluated by 166+ international student users across 9 countries with 79% mobile engagement."
         ],
         metrics: [
-            { label: "Global Users", value: "151+ Students", sub: "Across 9 Countries" },
+            { label: "Global Users", value: "166+ Students", sub: "Across 9 Countries" },
             { label: "Core ADTs", value: "7 Structures", sub: "AVL, Graph, Trie & Arrays" },
             { label: "Tree Invariant", value: "O(log N)", sub: "Dynamic AVL Self-Balancing" },
             { label: "Complexity", value: "Real-Time Big-O", sub: "Zero-Overhead Profiling" }
@@ -57,11 +57,11 @@ export const projects = [
         extraSkillsCount: 4,
         telemetry: {
             title: "Production Telemetry & Real-World Adoption",
-            badgeText: "151+ Users Across 9 Countries",
+            badgeText: "166+ Users Across 9 Countries",
             description: "Empirical telemetry and interaction metrics collected from Vercel analytics demonstrating global adoption.",
             stats: [
-                { label: "Verified Users", value: "151+ Students", sub: "Production Users" },
-                { label: "Interaction Sessions", value: "230+ Page Views", sub: "Algorithmic Runs" },
+                { label: "Verified Users", value: "166+ Students", sub: "Production Users" },
+                { label: "Interaction Sessions", value: "250+ Page Views", sub: "Algorithmic Runs" },
                 { label: "Global Reach", value: "9 Countries", sub: "India, US, UK & EU" },
                 { label: "Mobile Responsiveness", value: "79% Mobile", sub: "Cross-Platform" }
             ],
@@ -69,10 +69,10 @@ export const projects = [
                 {
                     id: 1,
                     title: "Live Telemetry",
-                    metricBadge: "151+ Unique Students • 230+ Page Views",
-                    metricBadgeMobile: "151+ Students • 230+ Views",
+                    metricBadge: "166+ Unique Students • 250+ Page Views",
+                    metricBadgeMobile: "166+ Students • 250+ Views",
                     image: data1Img,
-                    caption: "Live Traffic Telemetry: 151+ verified unique students and 230+ algorithmic interaction page views."
+                    caption: "Live Traffic Telemetry: 166+ verified unique students and 250+ algorithmic interaction page views."
                 },
                 {
                     id: 2,
@@ -136,7 +136,7 @@ export const projects = [
                 { metric: "TRIE LOOKUP TIME", value: "O(L)", benchmark: "Sub-linear Prefix Traversal", status: "Optimal" },
                 { metric: "ARRAY APPEND COST", value: "Amortized O(1)", benchmark: "Verified via Buffer Doubling", status: "Optimal" },
                 { metric: "RENDERING TARGET", value: "60 FPS", benchmark: "Throttled Async Frame Queue", status: "Optimal" },
-                { metric: "ACADEMIC ADOPTION", value: "151+ Verified Users", benchmark: "9 Countries • Vercel Telemetry", status: "Telemetry" }
+                { metric: "ACADEMIC ADOPTION", value: "166+ Verified Users", benchmark: "9 Countries • Vercel Telemetry", status: "Telemetry" }
             ]
         }
     },
@@ -155,18 +155,18 @@ export const projects = [
         demo: "https://notation-app-six.vercel.app/",
         image: notationsImg,
         metaBadges: [
-            "100+ Verified Users (150+ Views)",
+            "115+ Verified Users (167+ Views)",
             "BM25 Sub-2ms Queries",
             "Vercel Telemetry"
         ],
-        description: "A graph-based knowledge base that combines an interactive force-directed graph with an Okapi BM25 search engine. Simulates graph layout using Coulomb repulsion and Hooke spring physics on HTML5 Canvas at 60 FPS. Features sub-2ms search queries powered by an inverted index and prefix Trie, along with BFS shortest-path traversal between connected notes. Evaluated by 100+ international users with 150+ interaction sessions across 8 countries.",
-        overviewDescription: "A graph-based knowledge base combining an interactive force-directed graph with an Okapi BM25 search engine. Simulates graph layout using Coulomb repulsion and Hooke spring physics on HTML5 Canvas at 60 FPS with sub-2ms queries. Validated by 100+ global users with 150+ interaction sessions across 8 countries.",
+        description: "A graph-based knowledge base that combines an interactive force-directed graph with an Okapi BM25 search engine. Simulates graph layout using Coulomb repulsion and Hooke spring physics on HTML5 Canvas at 60 FPS. Features sub-2ms search queries powered by an inverted index and prefix Trie, along with BFS shortest-path traversal between connected notes. Evaluated by 115+ international users with 167+ interaction sessions across 8 countries.",
+        overviewDescription: "A graph-based knowledge base combining an interactive force-directed graph with an Okapi BM25 search engine. Simulates graph layout using Coulomb repulsion and Hooke spring physics on HTML5 Canvas at 60 FPS with sub-2ms queries. Validated by 115+ global users with 167+ interaction sessions across 8 countries.",
         highlights: [
             "Force-Directed Physics on HTML5 Canvas: Coulomb repulsion, Hooke spring attraction & damping velocity relaxation at 60 FPS",
             "Okapi BM25 Probabilistic Ranking: Calibrated term saturation (k1=1.2) and document length normalization (b=0.75)",
             "Inverted Index & Prefix Trie: In-memory postings list Map<Term, PostingsList> with sub-2ms O(L) prefix autocomplete",
             "Graph Theory Analytics: Degree Centrality CD(v) = deg(v)/(|V|-1) and BFS Shortest Path traversal in O(|V| + |E|)",
-            "AST-Driven Knowledge Graph: Bidirectional [[WikiLink]] parsing into an adjacency list with backlinks drawer; verified by 100+ users with 150+ graph interaction sessions across 8 countries."
+            "AST-Driven Knowledge Graph: Bidirectional [[WikiLink]] parsing into an adjacency list with backlinks drawer; verified by 115+ users with 167+ graph interaction sessions across 8 countries."
         ],
         metrics: [
             { label: "Graph Engine", value: "Force-Directed G=(V,E)" },
@@ -186,11 +186,11 @@ export const projects = [
         extraSkillsCount: 3,
         telemetry: {
             title: "Production Telemetry & Real-World Adoption",
-            badgeText: "100+ Users • 150+ Page Views",
+            badgeText: "115+ Users • 167+ Page Views",
             description: "Empirical telemetry collected from Vercel analytics demonstrating multi-region usage and engagement.",
             stats: [
-                { label: "Verified Users", value: "100+ Users", sub: "Production Traffic" },
-                { label: "Interaction Sessions", value: "150+ Page Views", sub: "Graph Explorations" },
+                { label: "Verified Users", value: "115+ Users", sub: "Production Traffic" },
+                { label: "Interaction Sessions", value: "167+ Page Views", sub: "Graph Explorations" },
                 { label: "Global Reach", value: "8 Countries", sub: "India, US, EU, BR" },
                 { label: "Mobile Responsiveness", value: "75% Mobile", sub: "Cross-Platform" }
             ],
@@ -198,10 +198,10 @@ export const projects = [
                 {
                     id: 1,
                     title: "Live Telemetry",
-                    metricBadge: "101 Users • 150 Page Views",
-                    metricBadgeMobile: "100+ Users • 150+ Views",
+                    metricBadge: "115 Users • 167 Page Views",
+                    metricBadgeMobile: "115+ Users • 167+ Views",
                     image: note1Img,
-                    caption: "Live Traffic Telemetry: 100+ verified unique users and 150+ knowledge graph interaction sessions recorded on Vercel Analytics."
+                    caption: "Live Traffic Telemetry: 115+ verified unique users and 167+ knowledge graph interaction sessions recorded on Vercel Analytics."
                 },
                 {
                     id: 2,
@@ -266,7 +266,7 @@ export const projects = [
                 { metric: "Prefix Lookup", value: "O(L)", benchmark: "Trie Stem Autocomplete", status: "Optimal" },
                 { metric: "Graph Simulation", value: "60 FPS", benchmark: "Damped Euler Numerical Solver", status: "Optimal" },
                 { metric: "Centrality Metric", value: "Degree CD(v)", benchmark: "Hub Node Identification", status: "Optimal" },
-                { metric: "GLOBAL ADOPTION", value: "100+ Verified Users", benchmark: "150+ Views • Vercel Telemetry", status: "Telemetry" }
+                { metric: "GLOBAL ADOPTION", value: "115+ Verified Users", benchmark: "167+ Views • Vercel Telemetry", status: "Telemetry" }
             ]
         }
     },

@@ -304,7 +304,7 @@ const Projects = () => {
                                                 <span className="font-semibold text-cream truncate">{flagshipProject.deployment || 'Production Live'}</span>
                                             </div>
                                             <span className="font-mono text-[10px] text-accent truncate">
-                                                {flagshipProject.metaBadges?.[0] || '151+ Students Across 9 Countries'}
+                                                {flagshipProject.metaBadges?.[0] || '166+ Students Across 9 Countries'}
                                             </span>
                                         </div>
                                     </div>
