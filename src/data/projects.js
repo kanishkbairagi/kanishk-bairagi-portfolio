@@ -24,12 +24,12 @@ export const projects = [
         demo: "https://data-structure-visualizerr.vercel.app",
         image: dataStructureImg,
         metaBadges: [
-            "166+ Verified Users (9 Countries)",
+            "165+ Verified Users (9 Countries)",
             "O(log N) AVL Guaranteed",
             "Vercel Telemetry"
         ],
-        description: "Built an interactive execution engine to help students visualize abstract data structures and runtime invariants in real time. Features animated AVL tree self-balancing across all 4 rotation archetypes, Dijkstra's shortest path relaxation, and contiguous dynamic array buffer doubling (C -> 2C). Validated by 166+ international students across 9 countries.",
-        overviewDescription: "Built an interactive execution engine to help students visualize abstract data structures and runtime invariants in real time. Features animated AVL tree self-balancing across all 4 rotation archetypes, Dijkstra's shortest path relaxation, and contiguous dynamic array buffer doubling (C -> 2C). Validated by 166+ international students across 9 countries during computer science coursework.",
+        description: "Built an interactive execution engine to help students visualize abstract data structures and runtime invariants in real time. Features animated AVL tree self-balancing across all 4 rotation archetypes, Dijkstra's shortest path relaxation, and contiguous dynamic array buffer doubling (C -> 2C). Validated by 165+ international students across 9 countries.",
+        overviewDescription: "Built an interactive execution engine to help students visualize abstract data structures and runtime invariants in real time. Features animated AVL tree self-balancing across all 4 rotation archetypes, Dijkstra's shortest path relaxation, and contiguous dynamic array buffer doubling (C -> 2C). Validated by 165+ international students across 9 countries during computer science coursework.",
         cardHighlights: [
             "Dynamic AVL Self-Balancing with 4 Rotation Archetypes (LL, RR, LR, RL) maintaining strict O(log N) search bounds.",
             "Dijkstra's Shortest Path Tree (SPT) with Real-Time Distance Vector Relaxation & Priority Queue simulation."
@@ -38,10 +38,10 @@ export const projects = [
             "Dynamic AVL Self-Balancing with 4 Rotation Archetypes (LL, RR, LR, RL) enforcing height bounds h < 1.44 log2(N+2).",
             "Dijkstra's Shortest Path Tree (SPT) with real-time distance-vector relaxation and Priority Queue extraction.",
             "Trie lexicographical traversal with prefix search in O(L) time where L is word length.",
-            "Amortized analysis demonstrator with buffer doubling (C -> 2C); evaluated by 166+ international student users across 9 countries with 79% mobile engagement."
+            "Amortized analysis demonstrator with buffer doubling (C -> 2C); evaluated by 165+ international student users across 9 countries with 79% mobile engagement."
         ],
         metrics: [
-            { label: "Global Users", value: "166+ Students", sub: "Across 9 Countries" },
+            { label: "Global Users", value: "165+ Students", sub: "Across 9 Countries" },
             { label: "Core ADTs", value: "7 Structures", sub: "AVL, Graph, Trie & Arrays" },
             { label: "Tree Invariant", value: "O(log N)", sub: "Dynamic AVL Self-Balancing" },
             { label: "Complexity", value: "Real-Time Big-O", sub: "Zero-Overhead Profiling" }
@@ -57,10 +57,10 @@ export const projects = [
         extraSkillsCount: 4,
         telemetry: {
             title: "Production Telemetry & Real-World Adoption",
-            badgeText: "166+ Users Across 9 Countries",
+            badgeText: "165+ Users Across 9 Countries",
             description: "Empirical telemetry and interaction metrics collected from Vercel analytics demonstrating global adoption.",
             stats: [
-                { label: "Verified Users", value: "166+ Students", sub: "Production Users" },
+                { label: "Verified Users", value: "165+ Students", sub: "Production Users" },
                 { label: "Interaction Sessions", value: "250+ Page Views", sub: "Algorithmic Runs" },
                 { label: "Global Reach", value: "9 Countries", sub: "India, US, UK & EU" },
                 { label: "Mobile Responsiveness", value: "79% Mobile", sub: "Cross-Platform" }
@@ -69,10 +69,10 @@ export const projects = [
                 {
                     id: 1,
                     title: "Live Telemetry",
-                    metricBadge: "166+ Unique Students • 250+ Page Views",
-                    metricBadgeMobile: "166+ Students • 250+ Views",
+                    metricBadge: "165+ Unique Students • 250+ Page Views",
+                    metricBadgeMobile: "165+ Students • 250+ Views",
                     image: data1Img,
-                    caption: "Live Traffic Telemetry: 166+ verified unique students and 250+ algorithmic interaction page views."
+                    caption: "Live Traffic Telemetry: 165+ verified unique students and 250+ algorithmic interaction page views."
                 },
                 {
                     id: 2,
@@ -136,7 +136,7 @@ export const projects = [
                 { metric: "TRIE LOOKUP TIME", value: "O(L)", benchmark: "Sub-linear Prefix Traversal", status: "Optimal" },
                 { metric: "ARRAY APPEND COST", value: "Amortized O(1)", benchmark: "Verified via Buffer Doubling", status: "Optimal" },
                 { metric: "RENDERING TARGET", value: "60 FPS", benchmark: "Throttled Async Frame Queue", status: "Optimal" },
-                { metric: "ACADEMIC ADOPTION", value: "166+ Verified Users", benchmark: "9 Countries • Vercel Telemetry", status: "Telemetry" }
+                { metric: "ACADEMIC ADOPTION", value: "165+ Verified Users", benchmark: "9 Countries • Vercel Telemetry", status: "Telemetry" }
             ]
         }
     },
